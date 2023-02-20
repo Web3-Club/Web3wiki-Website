@@ -9,12 +9,10 @@
 [JiceJin](https://github.com/JiceJin)<br>
 [Yanbo](https://github.com/yanboishere)
 
-<br>
 
 ## 致谢🙏
 ### 感谢 [antoniayly](https://twitter.com/antoniayly?s=21&t=QNardCn2PREdALePyTc2Jw) —— [abetterweb3](https://abetterweb3.notion.site/) 项目贡献者 对本项目的赞助
 
-<br>
 
 ## LICENCE📖
 ### [Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/legalcode)
