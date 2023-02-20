@@ -1,6 +1,6 @@
 # Web3wiki
-由Web3-Club组织建立的**中文互联网第一个Web3相关知识内容为主的百科站点**<br>
-[![GitHub stars](https://img.shields.io/github/stars/Web3-Club/Web3wiki-Website.svg?style=social&label=Stars)](https://github.com/Web3-Club/Web3wiki-Website)  [![GitHub watchers](https://img.shields.io/github/watchers/Web3-Club/Web3wiki-Website.svg?style=social&label=Watch)](https://github.com/Web3-Club/Web3wiki-Website)
+[![GitHub stars](https://img.shields.io/github/stars/Web3-Club/Web3wiki-Website.svg?style=social&label=Stars)](https://github.com/Web3-Club/Web3wiki-Website)  [![GitHub watchers](https://img.shields.io/github/watchers/Web3-Club/Web3wiki-Website.svg?style=social&label=Watch)](https://github.com/Web3-Club/Web3wiki-Website)<br>
+由Web3-Club组织建立的**中文互联网第一个Web3相关知识内容为主的百科站点**
 
 ## 关于我们
 
