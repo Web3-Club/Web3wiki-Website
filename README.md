@@ -16,3 +16,9 @@
 
 ## LICENCE📖
 ### [Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/legalcode)
+
+<br>
+
+**Copyright © 2023 China Web3-Club｜中国Web3社区**
+
+
