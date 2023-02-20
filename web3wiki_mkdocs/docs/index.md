@@ -1,6 +1,6 @@
-# [web3wiki.site](https://web3wiki.site/)
+# Web3wiki
+由Web3-Club组织建立的**中文互联网第一个Web3相关知识内容为主的百科站点**
 
-Web3-Club组织的 GitHub Pages主页，现在我们在此存储 Web3-wiki的内容。
 
 ## 关于我们
 
