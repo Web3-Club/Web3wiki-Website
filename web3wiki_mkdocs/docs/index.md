@@ -2,10 +2,6 @@
 
 Web3-Club组织的 GitHub Pages主页，现在我们在此存储 Web3-wiki的内容。
 
-## 项目贡献者
-[JiceJin](https://github.com/JiceJin)<br>
-[Yanbo](https://github.com/yanboishere)
-
 ## 关于我们
 
 ### 简体中文｜[繁体中文](https://github.com/Web3-Club/Intro./blob/main/README_%E7%B9%81%E4%BD%93%E4%B8%AD%E6%96%87.md)｜[English](https://github.com/Web3-Club/Intro./blob/main/README_English.md)｜[日本語](https://github.com/Web3-Club/Intro./blob/main/README_%E6%97%A5%E6%9C%AC%E8%AA%9E.md)｜[한국인](https://github.com/Web3-Club/Intro./blob/main/README_%ED%95%9C%EA%B5%AD%EC%9D%B8.md)
@@ -38,6 +34,11 @@ Web3-Club组织的 GitHub Pages主页，现在我们在此存储 Web3-wiki的内
 ### 感谢 [antoniayly](https://twitter.com/antoniayly?s=21&t=QNardCn2PREdALePyTc2Jw) —— [abetterweb3](https://abetterweb3.notion.site/) 项目贡献者 对本项目的赞助
 <br>
 <br>
+
+
+## 项目贡献者
+[JiceJin](https://github.com/JiceJin)<br>
+[Yanbo](https://github.com/yanboishere)
 
 ## LICENCE
 ### [Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/legalcode)
