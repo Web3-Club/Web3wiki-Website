@@ -1,0 +1,7 @@
+site_name: Web3-wiki
+
+nav:
+- Home: "index.md"
+- Demo: "demo.md"
+
+theme: material
