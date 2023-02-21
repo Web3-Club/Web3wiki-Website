@@ -5,8 +5,12 @@
 由[Web3-Club](https://github.com/Web3-Club/Intro./blob/main/README.md)组织建立的**中文互联网第一个Web3相关知识内容为主的百科站点**<br>
 该项目现在仍在施工中🏗️
 
-## Plan🔖
+# 施工计划🔖
 - [ ] 1
+- [ ] 2
+- [ ] 3
+- [ ] 4
+- [ ] 5
 
 ## 项目贡献者👨‍💻
 [JiceJin](https://github.com/JiceJin)<br>
