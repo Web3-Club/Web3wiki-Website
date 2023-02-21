@@ -6,11 +6,7 @@
 该项目现在仍在施工中🏗️
 
 # 施工计划🔖
-- [x] Mkdocs框架搭好
-- [ ] 2
-- [ ] 3
-- [ ] 4
-- [ ] 5
+详见[issues#7](https://github.com/Web3-Club/Web3wiki-Website/issues/7)
 
 ## 项目贡献者👨‍💻
 [JiceJin](https://github.com/JiceJin)<br>
