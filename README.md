@@ -6,7 +6,7 @@
 该项目现在仍在施工中🏗️
 
 ## Plan🔖
-- [ ]
+- [ ] 1
 
 ## 项目贡献者👨‍💻
 [JiceJin](https://github.com/JiceJin)<br>
