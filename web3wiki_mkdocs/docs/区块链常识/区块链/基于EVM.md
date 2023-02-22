@@ -1,81 +1,3 @@
-# 区块链<br>
-
-<br>
-
-        区块链系统的设计差异很大，特别是在用于执行验证网络数据这一基本任务的共识机制方面。
-
-<br>
-
-**访问以下链接以了解更多相关信息**<br>
-
-区块链的类型：PoW、PoS 和私有<br>
-[Types of Blockchains: PoW, PoS, and Private](https://www.gemini.com/cryptopedia/blockchain-types-pow-pos-private)<br>
-区块链的类型<br>
-[Types of Blockchain](https://www.geeksforgeeks.org/types-of-blockchain/)<br>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-## Solana<br>
-
-<br>
-
-        Solana 是一个具有智能合约功能的公共区块链平台。 它的原生加密货币是 SOL。
-
-<br>
-
-**访问以下链接以了解更多相关信息**<br>
-
-什么是 Solana，它是如何工作的？<br>
-[What is Solana, and how does it work?](https://cointelegraph.com/news/what-is-solana-and-how-does-it-work)<br>
-Solana 初学者指南<br>
-[Beginners Guide To Solana](https://solana.com/news/getting-started-with-solana-development)<br>
-Solana简介<br>
-[Solana Introduction](https://docs.solana.com/introduction)<br>
-Solana架构<br>
-[Solana Architecture](https://docs.solana.com/cluster/overview)<br>
-开始构建 Solana！<br>
-[Start Building Solana!](https://beta.solpg.io/?utm_source=solana.com)<br>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-## TON<br>
-
-<br>
-
-### 开放网络
-        TON 是由 Telegram 设计的完全去中心化的第 1 层区块链，旨在吸引数十亿用户。 
-        它拥有超快速的交易、极低的费用、易于使用的应用程序，并且对环境友好。
-
-<br>
-
-**访问以下链接以了解更多相关信息**<br>
-
-TON Telegram 集成突出了区块链社区的协同作用<br>
-[TON Telegram integration highlights synergy of blockchain community](https://cointelegraph.com/news/ton-telegram-integration-highlights-synergy-of-blockchain-community)<br>
-开始在开放网络上构建<br>
-[Start building on The Open Network](https://ton.org/dev)<br>
-TON简介<br>
-[TON Introduction](https://ton.org/docs/learn/introduction)<br>
-区块链分析<br>
-[Blockchain analysis](https://ton.org/analysis)<br>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
 ## 基于EVM<br>
 
 <br>
@@ -85,6 +7,8 @@ TON简介<br>
     有以太坊账户和智能合约都存储在这台虚拟计算机上。许多区块链已经分叉了以太坊区块链并在其之上添加
     了功能，这些区块链被称为基于 EVM 的区块链。
 
+<br>
+<br>
 <br>
 
 **访问以下链接以了解更多相关信息**<br>
@@ -96,12 +20,9 @@ TON简介<br>
 <br>
 <br>
 
-### 基于 EVM 的区块链：<br>
+**基于 EVM 的区块链：**<br>
 
-<br>
-<br>
-
-#### 以太坊<br>
+### 以太坊<br>
 
 <br>
 
@@ -124,7 +45,7 @@ TON简介<br>
 <br>
 <br>
 
-#### Polygon<br>
+### Polygon<br>
 
 <br>
 
@@ -144,7 +65,7 @@ Polygon白皮书<br>
 <br>
 <br>
 
-#### 币安智能链<br>
+### 币安智能链<br>
 
 <br>
 
@@ -164,7 +85,7 @@ BNB链概述<br>
 <br>
 <br>
 
-#### 灵知链<br>
+### 灵知链<br>
 
 <br>
 
@@ -185,7 +106,7 @@ Gnosis 概述<br>
 <br>
 <br>
 
-#### 火币生态链<br>
+### 火币生态链<br>
 
 <br>
 
@@ -205,7 +126,7 @@ HECO链介绍<br>
 <br>
 <br>
 
-#### Avalanche<br>
+### Avalanche<br>
 
 <br>
 
@@ -225,7 +146,7 @@ Avalanche 白皮书<br>
 <br>
 <br>
 
-#### Fantom<br>
+### Fantom<br>
 
 <br>
 
@@ -245,93 +166,18 @@ Fantom概览<br>
 <br>
 <br>
 
-#### Moonbeam/Moonriver<br>
+### Moonbeam/Moonriver<br>
 
 <br>
 
-##### Moonbeam<br>
+**Moonbeam**<br>
     Moonbeam是一个 Polkadot 网络平行链，它承诺以太坊和 Polkadot 之间的跨链互操作性。 更具体地说
     ,Moonbeam 是一个智能合约平台，使开发人员能够在两个网络之间移动 dApp，而无需重写代码或重新部署
     基础设施。
 
-##### Moonriver<br>
+**Moonriver**<br>
     Moonriver是一个激励测试网。它使开发人员能够在在 Moonbeam 上启动之前创建、测试和调整他们的协议。
     Moonbeam 是生态系统的主网。
-
-<br>
-
-**访问以下链接以了解更多相关信息**<br>
-
-关于[Moonbream](https://docs.moonbeam.network/learn/platform/networks/moonbeam/)<br>
-[About Moonbream](https://docs.moonbeam.network/learn/platform/networks/moonbeam/)<br>
-Moonbeam概览<br>
-[Moonbeam Vision](https://docs.moonbeam.network/learn/platform/vision/)<br>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-## L2区块链<br>
-
-<br>
-
-        Layer-2 是指在底层区块链协议之上运行以提高其可扩展性和效率的网络或技术。这类扩展解决方案
-    需要将以太坊的一部分交易负担转移到相邻的系统架构，然后由该系统架构处理网络处理的首当其冲，
-    然后才向以太坊报告以最终确定其结果。
-    
-<br>
-
-**访问以下链接以了解更多相关信息**<br>
-
-Layer-1 和 Layer-2 区块链扩展解决方案<br>
-[Layer-1 and Layer-2 Blockchain Scaling Solutions](https://www.gemini.com/cryptopedia/blockchain-layer-2-network-layer-1-network)<br>
- Layer- 2 币安学院<br>
-[Layer 2 - Binance Academy](https://academy.binance.com/en/glossary/layer-2)<br>
-
-<br>
-<br>
-<br>
-
-### L2区块链包括：<br>
-
-<br>
-<br>
-
-#### Arbitrum<br>
-
-<br>
-
-        Arbitrum 旨在通过尽可能多地从以太坊的主区块链（第 1 层）转移计算和数据存储来减少交易费用和
-    拥塞。从以太坊区块链存储数据被称为第 2 层扩展解决方案。
-
-<br>
-
-**访问以下链接以了解更多相关信息**<br>
-
-Arbitrum白皮书<br>
-[Arbitrum whitepaper](https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-kalodner.pdf)<br>
-Arbitrum内核<br>
-[Inside Arbitrum](https://developer.offchainlabs.com/docs/Inside_Arbitrum)<br>
-
-<br>
-<br>
-<br>
-
-#### Moonbeam/Moonriver<br>
-
-<br>
-
-##### Moonbeam<br>
-        Moonbeam是一个 Polkadot 网络平行链，它承诺以太坊和 Polkadot 之间的跨链互操作性。 
-    更具体地说，Moonbeam是一个智能合约平台，使开发人员能够在两个网络之间移动 dApp，而无需重
-    写代码或重新部署基础设施。
-
-##### Moonriver<br>
-        Moonriver是一个激励测试网。 它使开发人员能够在在 Moonbeam 上启动之前创建、测试和
-    调整他们的协议。 Moonbeam 是生态系统的主网。
 
 <br>
 
