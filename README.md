@@ -10,7 +10,7 @@
 
 ## 项目贡献者👨‍💻
 ### 永远感谢他们为本项目作出的所有贡献
-[JiceJin](https://github.com/JiceJin)<br>
+**[JiceJin](https://github.com/JiceJin)**<br>
 [Yanbo](https://github.com/yanboishere)
 
 # 特别感谢我们的[Premium Sponser](https://github.com/Web3-Club/Sponsor/blob/main/Premium%20sponsors.md)👏
