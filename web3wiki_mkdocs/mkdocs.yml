@@ -152,6 +152,11 @@ nav:
         - "Arbitrum":
           - "Arbitrum白皮书": "区块链常识/中文网页/区块链-中文网页/L2区块链/Arbitrum/Arbitrum白皮书.md"
           - "Arbitrum内核": "区块链常识/中文网页/区块链-中文网页/L2区块链/Arbitrum/Arbitrum内核.md"
+  - "more":
+    - "正文": "区块链常识/more.md"
+    - "相关网页中文翻译":
+      - "了解区块链技术的完整课程": "区块链常识/中文网页/more-中文网页/了解区块链技术的完整课程.md"
+      - "区块链技术解释": "区块链常识/中文网页/more-中文网页/区块链技术解释.md"
 
 theme:
   name: 'material'
