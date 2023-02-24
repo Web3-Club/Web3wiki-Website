@@ -9,7 +9,7 @@
 详见 **[issues#7](https://github.com/Web3-Club/Web3wiki-Website/issues/7)**
 
 ## 项目[贡献者](https://github.com/Web3-Club/Web3wiki-Website/graphs/contributors?from=2023-02-12&to=2023-02-23&type=a)👨‍💻
-### 永远感谢他们为本项目作出的所有贡献
+### 永远感谢他们为本项目所作出的贡献
 **[JiceJin](https://github.com/JiceJin)**<br>
 [Yanbo](https://github.com/yanboishere)
 
