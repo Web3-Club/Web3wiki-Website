@@ -24,7 +24,7 @@
 
 <br>
 
-**Built by China Web3-Club contributors with heart.**<br>
+**Built by China Web3-Club [contributors](https://github.com/Web3-Club/Web3wiki-Website#%E9%A1%B9%E7%9B%AE%E8%B4%A1%E7%8C%AE%E8%80%85) with heart.**<br>
 **Blockchain Developer | Develop Roadmap &emsp;Copyright © roadmap.sh**<br>
 **Chinese Translation copyright © 2023 &emsp; China Web3-Club｜中国Web3社区**<br>
 **ALL RIGHT RESERVED**
