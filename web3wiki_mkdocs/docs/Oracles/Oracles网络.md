@@ -10,6 +10,6 @@
 分散的 Oracle 网络<br>
 [Decentralized Oracle Networks](https://medium.com/coinmonks/decentralized-oracle-networks-9fead28f5fe5)<br>
 去中心化 Oracle 网络发展的新手指南<br>
-[A Beginner’s Guide To The Evolution Of Decentralized Oracle Networks](A Beginner’s Guide To The Evolution Of Decentralized Oracle Networks)<br>
+[A Beginner’s Guide To The Evolution Of Decentralized Oracle Networks](https://chainlinktoday.com/a-beginners-guide-to-the-evolution-of-decentralized-oracle-networks/)<br>
 了解Oracle 网络<br>
 [Understanding Oracle Networks](https://coinmetro.com/blog/understanding-oracle-networks/)
