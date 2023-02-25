@@ -162,7 +162,7 @@ nav:
     - "正文": "Oracles/区块链预言机.md"
     - "相关网页中文翻译":
         - "区块链预言机": "Oracles/中文网页/区块链预言机-中文网页/区块链预言机.md"
-        - "什么是区块链预言机？":"Oracles/区块链预言机.md/什么是区块链预言机？.md"
+        - "什么是区块链预言机？": "Oracles/中文网页/区块链预言机-中文网页/什么是区块链预言机？.md"
   - "混合智能合约":
     - "正文": "Oracles/混合智能合约.md"
     - "相关网页中文翻译":
@@ -171,14 +171,14 @@ nav:
   - "Chainlink":
     - "正文": "Oracles/Chainlink.md"
     - "相关网页中文翻译":
-        - "什么是Chainlink？":"Oracles/中文网页/Chianlink-中文网页/什么是Chainlink？.md"
-        - "5 分钟了解 Chainlink":"Oracles/中文网页/Chianlink-中文网页/5 分钟了解 Chainlink.md"
+        - "什么是Chainlink？": "Oracles/中文网页/Chianlink-中文网页/什么是Chainlink？.md"
+        - "5 分钟了解 Chainlink": "Oracles/中文网页/Chianlink-中文网页/5 分钟了解 Chainlink.md"
   - "Oracles 网络":
-    - "正文":"Oracles/Oracles网络.md"
+    - "正文": "Oracles/Oracles网络.md"
     - "相关网页中文翻译":
-        - "分散的 Oracle 网络":"Oracles/中文网页/Oracles网络-中文网页/分散的 Oracle 网络.md"
-        - "去中心化 Oracle 网络发展的新手指南":"Oracles/中文网页/Oracles网络-中文网页/分散的 Oracle 网络.md"
-        - "了解Oracle 网络":"Oracles/中文网页/Oracles网络-中文网页/了解Oracle 网络.md"
+        - "分散的 Oracle 网络": "Oracles/中文网页/Oracles网络-中文网页/分散的 Oracle 网络.md"
+        - "去中心化 Oracle 网络发展的新手指南": "Oracles/中文网页/Oracles网络-中文网页/分散的 Oracle 网络.md"
+        - "了解Oracle 网络": "Oracles/中文网页/Oracles网络-中文网页/了解Oracle 网络.md"
 
 
 
