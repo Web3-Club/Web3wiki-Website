@@ -16,8 +16,15 @@
 ### 特别感谢我们的[Premium Sponser](https://github.com/Web3-Club/Sponsor/blob/main/Premium%20sponsors.md)👏
  <a href="https://abetterweb3.notion.site/" target=_blank>
 <img width="640" alt="截屏2023-02-20 下午10 23 59" src="https://user-images.githubusercontent.com/76860915/220133607-dddc3468-0cda-4065-bce3-3b275dfe6ad1.png">
-
-
+ 
+### [关于我们](https://github.com/Web3-Club/Intro.#%E7%AE%80%E4%BB%8B)
+ 
+### 赞助我们
+#### 0xBBc1fE874422F61fB135e72C3229Fffc3Cb266Fb (ETH) 或 [微信支付](https://yanbo.tech/post/support/)
+当您的赞助得到我们的确认后，您的姓名或昵称将出现在 [赞助榜](https://github.com/Web3-Club/Sponsor) 界面 上。
+<br>
+<br>
+**感谢您对我们社区未来健康发展所作出的支持！**
 
 ## LICENCE📖
 ### [Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/legalcode)
