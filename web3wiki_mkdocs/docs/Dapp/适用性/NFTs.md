@@ -10,6 +10,6 @@
 不可替代代币 (NFT)<br>
 [Non-Fungible Token (NFT)](https://www.investopedia.com/non-fungible-tokens-nft-5115211)<br>
 NFT，解释<br>
-N[FTs, explained](https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq)<br>
+[NFTs, explained](https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq)<br>
 5 分钟解释 NFT | 什么是 NFT？ - 不可替代令牌<br>
 [NFT Explained In 5 Minutes | What Is NFT? - Non Fungible Token](https://youtu.be/NNQLJcJEzv0)
