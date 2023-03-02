@@ -10,7 +10,7 @@
 ### 状态通道：链下交易简介
 [State Channels: An Introduction to Off-chain Transactions](https://www.talentica.com/blogs/state-channels-an-introduction-to-off-chain-transactions/)
 
-## Optimistic Rollups和Fraud Proofs
+## Optimistic Rollups 和 Fraud Proofs
 Optimistic rollups 是第 2 层 (L2) 结构，它通过将计算和数据存储移到链外来提高以太坊基础层的吞吐量和延迟。 乐观汇总处理以太坊主网之外的交易，减少基础层的拥塞并提高可扩展性。Optimistic rollups 允许任何人在不提供有效性证明的情况下发布区块。 然而，为了确保链条保持安全，optimistic rollups 指定了一个时间窗口，在此期间任何人都可以对状态转换提出异议。
 
 ### Optimistic Rollups 如何工作（完整指南）
@@ -22,7 +22,7 @@ Optimistic rollups 是第 2 层 (L2) 结构，它通过将计算和数据存储�
 ### 零知识汇总 - 以太坊
 [Zero-Knowledge Rollups - Ethereum](https://ethereum.org/en/developers/docs/scaling/zk-rollups)
 
-### 什么是zk-SNATRK ，以及 zk-SNARK 是怎么运作的
+### 什么是 zk-SNATRK ，以及 zk-SNARK 是怎么运作的
 [Why and How zk-SNARK Works](https://medium.com/@imolfar/why-and-how-zk-snark-works-1-introduction-the-medium-of-a-proof-d946e931160)
 
 ### zk-SNARK 简介
@@ -43,7 +43,7 @@ Plasma 是一个框架，它允许创建使用以太坊主链作为信任和仲�
 ## Sidechains
 Sidechains是一个独立的区块链网络，通过双向挂钩连接到另一个区块链——称为父区块链或主网。
                 
-### Sidechains- 以太坊
+### Sidechains - 以太坊
 [Sidechains - Ethereum](https://ethereum.org/en/developers/docs/scaling/sidechains/)
 
 ### Sidechains简介
