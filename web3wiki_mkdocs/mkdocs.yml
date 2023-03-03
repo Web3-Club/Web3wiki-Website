@@ -326,6 +326,12 @@ nav:
       - "区块链节点提供商及其工作方式": "Dapp/中文网页/节点及服务(NaaS)/区块链节点提供商及其工作方式.md"
 - "建设Scale":
   - "建设Scale": "建设Scale/建设Scale.md"
+  - "中文网页":
+    - "状态通道基础": "建设Scale/中文网页/状态通道基础.md"
+    - "状态通道：链下交易简介": "建设Scale/中文网页/状态通道：链下交易简介.md"
+    - "Optimistic Rollups 如何工作（完整指南）": "建设Scale/中文网页/Optimistic Rollups 如何工作（完整指南）.md"
+    - "什么是 zk-SNATRK ，以及 zk-SNARK 是怎么运作的": "建设Scale/中文网页/什么是 zk-SNATRK ，以及 zk-SNARK 是怎么运作的.md"
+    - "zk-SNARK 简介": "建设Scale/中文网页/zk-SNARK 简介.md"
 
 
 
