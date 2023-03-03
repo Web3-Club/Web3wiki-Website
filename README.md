@@ -11,7 +11,8 @@
 ## 项目[贡献者](https://github.com/Web3-Club/Web3wiki-Website/graphs/contributors?from=2023-02-12&to=2023-02-23&type=a)👨‍💻
 ### 永远感谢他们为本项目所作出的贡献
 **[JiceJin](https://github.com/JiceJin)**<br>
-[Yanbo](https://github.com/yanboishere)
+[Yanbo](https://github.com/yanboishere)<br>
+[1anyway](https://github.com/1anyway)
 
 ### 特别感谢我们的[Premium Sponser](https://github.com/Web3-Club/Sponsor/blob/main/Premium%20sponsors.md)👏
  <a href="https://abetterweb3.notion.site/" target=_blank>
