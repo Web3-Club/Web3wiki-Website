@@ -1,0 +1,6909 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../../%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6/">
+      
+      
+        <link rel="next" href="../%E4%BB%80%E4%B9%88%E6%98%AF%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%EF%BC%9F/">
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.13">
+    
+    
+      
+        <title>智能合约简介 - Web3-wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.ffa9267a.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="default" data-md-color-accent="indigo">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../../.." title="Web3-wiki" class="md-header__button md-logo" aria-label="Web3-wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Web3-wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              智能合约简介
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Web3-wiki" class="md-nav__button md-logo" aria-label="Web3-wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Web3-wiki
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        首页
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          基本的区块链知识
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          基本的区块链知识
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+          什么是区块链
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          什么是区块链
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%9F%BA%E6%9C%AC%E7%9A%84%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9F%A5%E8%AF%86/%E4%BB%80%E4%B9%88%E6%98%AF%E5%8C%BA%E5%9D%97%E9%93%BE/" class="md-nav__link">
+        正文
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_1_2" id="__nav_2_1_2_label" tabindex="0">
+          相关网页中文翻译
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_1_2">
+          <span class="md-nav__icon md-icon"></span>
+          相关网页中文翻译
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%9F%BA%E6%9C%AC%E7%9A%84%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9F%A5%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E4%BB%80%E4%B9%88%E6%98%AF%E5%8C%BA%E5%9D%97%E9%93%BE-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE%E5%AE%9A%E4%B9%89%E8%A7%A3%E9%87%8A/" class="md-nav__link">
+        区块链定义解释
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%9F%BA%E6%9C%AC%E7%9A%84%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9F%A5%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E4%BB%80%E4%B9%88%E6%98%AF%E5%8C%BA%E5%9D%97%E9%93%BE-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E4%BB%80%E4%B9%88%E6%98%AF%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%EF%BC%9F/" class="md-nav__link">
+        什么是去中心化？
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../基本的区块链知识/中文网页/什么是区块链-中文网页/区块链是如何运作的？.md" class="md-nav__link">
+        区块链是如何运作的？
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../基本的区块链知识/中文网页/什么是区块链-中文网页/什么是区块链-开发人员的区块链基础知识.md" class="md-nav__link">
+        什么是区块链？ | 开发人员的区块链基础知识
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+          权力下放
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          权力下放
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%9F%BA%E6%9C%AC%E7%9A%84%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9F%A5%E8%AF%86/%E6%9D%83%E5%8A%9B%E4%B8%8B%E6%94%BE/" class="md-nav__link">
+        正文
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_2_2" id="__nav_2_2_2_label" tabindex="0">
+          相关网页中文翻译
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          相关网页中文翻译
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%9F%BA%E6%9C%AC%E7%9A%84%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9F%A5%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E6%9D%83%E5%8A%9B%E4%B8%8B%E6%94%BE-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E4%BB%80%E4%B9%88%E6%98%AF%E6%9D%83%E5%8A%9B%E4%B8%8B%E6%94%BE%EF%BC%9F/" class="md-nav__link">
+        什么是权力下放？
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%9F%BA%E6%9C%AC%E7%9A%84%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9F%A5%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E6%9D%83%E5%8A%9B%E4%B8%8B%E6%94%BE-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%9C%A8%E5%8C%BA%E5%9D%97%E9%93%BE%E4%B8%AD%EF%BC%8C%E6%9D%83%E5%8A%9B%E4%B8%8B%E6%94%BE%E7%9A%84%E4%BD%9C%E7%94%A8%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F/" class="md-nav__link">
+        在区块链中，权力下放的作用是什么？
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+          为什么区块链重要
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          为什么区块链重要
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%9F%BA%E6%9C%AC%E7%9A%84%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9F%A5%E8%AF%86/%E4%B8%BA%E4%BB%80%E4%B9%88%E5%8C%BA%E5%9D%97%E9%93%BE%E9%87%8D%E8%A6%81/" class="md-nav__link">
+        正文
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_3_2" id="__nav_2_3_2_label" tabindex="0">
+          相关网页中文翻译
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          相关网页中文翻译
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%9F%BA%E6%9C%AC%E7%9A%84%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9F%A5%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E4%B8%BA%E4%BB%80%E4%B9%88%E5%8C%BA%E5%9D%97%E9%93%BE%E9%87%8D%E8%A6%81-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E5%8C%BA%E5%9D%97%E9%93%BE%EF%BC%9F/" class="md-nav__link">
+        为什么是区块链？
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%9F%BA%E6%9C%AC%E7%9A%84%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9F%A5%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E4%B8%BA%E4%BB%80%E4%B9%88%E5%8C%BA%E5%9D%97%E9%93%BE%E9%87%8D%E8%A6%81-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E4%BB%80%E4%B9%88%E6%98%AF%E5%8C%BA%E5%9D%97%E9%93%BE%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E5%AE%83%E5%BE%88%E9%87%8D%E8%A6%81%EF%BC%9F/" class="md-nav__link">
+        什么是区块链，为什么它很重要？
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%9F%BA%E6%9C%AC%E7%9A%84%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9F%A5%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E4%B8%BA%E4%BB%80%E4%B9%88%E5%8C%BA%E5%9D%97%E9%93%BE%E9%87%8D%E8%A6%81-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/Web3%26%E5%AF%86%E7%A0%81%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%85%BC%E5%BE%97%EF%BC%9F/" class="md-nav__link">
+        Web3/密码:为什么要兼得？
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%9F%BA%E6%9C%AC%E7%9A%84%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9F%A5%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E4%B8%BA%E4%BB%80%E4%B9%88%E5%8C%BA%E5%9D%97%E9%93%BE%E9%87%8D%E8%A6%81-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E4%B8%BA%E4%BB%80%E4%B9%88%E5%8C%BA%E5%9D%97%E9%93%BE%E5%BE%88%E9%87%8D%E8%A6%81%E4%BB%A5%E5%8F%8A%E4%B8%BA%E4%BB%80%E4%B9%88%E5%AE%83%E5%BE%88%E9%87%8D%E8%A6%81/" class="md-nav__link">
+        为什么区块链很重要以及为什么它很重要
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+          区块链结构
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          区块链结构
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%9F%BA%E6%9C%AC%E7%9A%84%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9F%A5%E8%AF%86/%E5%8C%BA%E5%9D%97%E9%93%BE%E7%BB%93%E6%9E%84/" class="md-nav__link">
+        正文
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_4_2" id="__nav_2_4_2_label" tabindex="0">
+          相关网页中文翻译
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          相关网页中文翻译
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%9F%BA%E6%9C%AC%E7%9A%84%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9F%A5%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE%E7%BB%93%E6%9E%84-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE%E6%9E%B6%E6%9E%84%E5%9F%BA%E7%A1%80%EF%BC%9A%E7%BB%84%E4%BB%B6%E3%80%81%E7%BB%93%E6%9E%84%E3%80%81%E6%94%B6%E7%9B%8A%E5%92%8C%E5%88%9B%E9%80%A0/" class="md-nav__link">
+        区块链架构基础：组件、结构、收益和创造
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%9F%BA%E6%9C%AC%E7%9A%84%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9F%A5%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE%E7%BB%93%E6%9E%84-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE%E6%9E%B6%E6%9E%84%20101%EF%BC%9A%E7%BB%84%E4%BB%B6%E3%80%81%E7%BB%93%E6%9E%84%E5%92%8C%E4%BC%98%E5%8A%BF/" class="md-nav__link">
+        区块链架构 101：组件、结构和优势
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%9F%BA%E6%9C%AC%E7%9A%84%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9F%A5%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE%E7%BB%93%E6%9E%84-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE%E7%BB%93%E6%9E%84/" class="md-nav__link">
+        区块链结构
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../基本的区块链知识/中文网页/区块链结构-中文网页/区块链基础｜Coursera.md" class="md-nav__link">
+        区块链基础｜Coursera
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+          基本区块链操作
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_5">
+          <span class="md-nav__icon md-icon"></span>
+          基本区块链操作
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%9F%BA%E6%9C%AC%E7%9A%84%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9F%A5%E8%AF%86/%E5%9F%BA%E6%9C%AC%E5%8C%BA%E5%9D%97%E9%93%BE%E6%93%8D%E4%BD%9C/" class="md-nav__link">
+        正文
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_5_2" id="__nav_2_5_2_label" tabindex="0">
+          相关网页中文翻译
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_5_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_5_2">
+          <span class="md-nav__icon md-icon"></span>
+          相关网页中文翻译
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%9F%BA%E6%9C%AC%E7%9A%84%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9F%A5%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%9F%BA%E6%9C%AC%E5%8C%BA%E5%9D%97%E9%93%BE%E6%93%8D%E4%BD%9C-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%EF%BC%9A%E7%BB%93%E6%9E%84%E3%80%81%E6%93%8D%E4%BD%9C%E5%92%8C%E6%AF%94%E7%89%B9%E5%B8%81%E5%8C%BA%E5%9D%97%E9%93%BE/" class="md-nav__link">
+        区块链基础知识：结构、操作和比特币区块链
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%9F%BA%E6%9C%AC%E7%9A%84%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9F%A5%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%9F%BA%E6%9C%AC%E5%8C%BA%E5%9D%97%E9%93%BE%E6%93%8D%E4%BD%9C-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E6%AF%94%E7%89%B9%E5%B8%81%E5%8C%BA%E5%9D%97%E9%93%BE%E4%BA%A4%E6%98%93--%E6%AF%94%E7%89%B9%E5%B8%81%E5%BC%80%E5%8F%91%E8%80%85/" class="md-nav__link">
+        比特币区块链交易 | 比特币开发者
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../基本的区块链知识/中文网页/基本区块链操作-中文网页/以太坊区块链交易--ethereum.org.md" class="md-nav__link">
+        以太坊区块链交易 | ethereum.org
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../基本的区块链知识/中文网页/基本区块链操作-中文网页/区块链基础--Coursera.md" class="md-nav__link">
+        区块链基础｜Coursera
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+          区块链技术的应用和用途
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_6">
+          <span class="md-nav__icon md-icon"></span>
+          区块链技术的应用和用途
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%9F%BA%E6%9C%AC%E7%9A%84%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9F%A5%E8%AF%86/%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%9A%84%E5%BA%94%E7%94%A8%E5%92%8C%E7%94%A8%E9%80%94/" class="md-nav__link">
+        正文
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_6_2" id="__nav_2_6_2_label" tabindex="0">
+          相关网页中文翻译
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_6_2">
+          <span class="md-nav__icon md-icon"></span>
+          相关网页中文翻译
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../基本的区块链知识/中文网页/区块链技术的应用和用途-中文网页/区块链技术的应用和用途.md" class="md-nav__link">
+        区块链技术的应用和用途
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%9F%BA%E6%9C%AC%E7%9A%84%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9F%A5%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%9A%84%E5%BA%94%E7%94%A8%E5%92%8C%E7%94%A8%E9%80%94-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%9A%84%E5%8D%81%E5%A4%A7%E7%8E%B0%E5%AE%9E%E5%BA%94%E7%94%A8/" class="md-nav__link">
+        区块链技术的十大现实应用
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../基本的区块链知识/中文网页/区块链技术的应用和用途-中文网页/以太坊区块链交易--ethereum.org.md" class="md-nav__link">
+        以太坊区块链交易 | ethereum.org
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%9F%BA%E6%9C%AC%E7%9A%84%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9F%A5%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%9A%84%E5%BA%94%E7%94%A8%E5%92%8C%E7%94%A8%E9%80%94-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E6%89%93%E7%A0%B4%E7%8E%B0%E7%8A%B6%E7%9A%84%E5%8C%BA%E5%9D%97%E9%93%BE%E5%BA%94%E7%94%A8%E5%92%8C%E7%8E%B0%E5%AE%9E%E4%B8%96%E7%95%8C%E7%94%A8%E4%BE%8B%20E34/" class="md-nav__link">
+        打破现状的区块链应用和现实世界用例 E34
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          区块链常识
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          区块链常识
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+          贮存
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          贮存
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E8%B4%AE%E5%AD%98/" class="md-nav__link">
+        正文
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_1_2" id="__nav_3_1_2_label" tabindex="0">
+          相关网页中文翻译
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_1_2">
+          <span class="md-nav__icon md-icon"></span>
+          相关网页中文翻译
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E8%B4%AE%E5%AD%98-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE%E8%B4%AE%E5%AD%98/" class="md-nav__link">
+        区块链贮存
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../区块链常识/中文网页/贮存-中文网页/去中心化存储-中文网页.md" class="md-nav__link">
+        去中心化存储
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E8%B4%AE%E5%AD%98-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/IPFS%E7%9A%84%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86/" class="md-nav__link">
+        IPFS的工作原理
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+          挖矿和激励模型
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          挖矿和激励模型
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E6%8C%96%E7%9F%BF%E5%92%8C%E6%BF%80%E5%8A%B1%E6%A8%A1%E5%9E%8B/" class="md-nav__link">
+        正文
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_2" id="__nav_3_2_2_label" tabindex="0">
+          相关网页中文翻译
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          相关网页中文翻译
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E6%8C%96%E7%9F%BF%E5%92%8C%E6%BF%80%E5%8A%B1%E6%A8%A1%E5%9E%8B-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE%E5%AF%B9%E7%9F%BF%E5%B7%A5%E7%9A%84%E6%BF%80%E5%8A%B1/" class="md-nav__link">
+        区块链对矿工的激励
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../区块链常识/中文网页/挖矿和激励模型-中文网页/以太坊共识机制.md" class="md-nav__link">
+        以太坊共识机制
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E6%8C%96%E7%9F%BF%E5%92%8C%E6%BF%80%E5%8A%B1%E6%A8%A1%E5%9E%8B-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/Solana%20%E8%B4%A8%E6%8A%BC%E5%A5%96%E5%8A%B1/" class="md-nav__link">
+        Solana 质押奖励
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+          权力下放与信任
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          权力下放与信任
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E6%9D%83%E5%8A%9B%E4%B8%8B%E6%94%BE%E4%B8%8E%E4%BF%A1%E4%BB%BB/" class="md-nav__link">
+        正文
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_2" id="__nav_3_3_2_label" tabindex="0">
+          相关网页中文翻译
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          相关网页中文翻译
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E6%9D%83%E5%8A%9B%E4%B8%8B%E6%94%BE%E4%B8%8E%E4%BF%A1%E4%BB%BB-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88/" class="md-nav__link">
+        加密货币到底是什么
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../区块链常识/中文网页/权力下放与信任-中文网页/以太坊共识机制.md" class="md-nav__link">
+        以太坊共识机制
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../区块链常识/中文网页/权力下放与信任-中文网页/密码真理的优越性.md" class="md-nav__link">
+        密码真理的优越性
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+          区块链分叉
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          区块链分叉
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E5%8C%BA%E5%9D%97%E9%93%BE%E5%88%86%E5%8F%89/" class="md-nav__link">
+        正文
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_4_2" id="__nav_3_4_2_label" tabindex="0">
+          相关网页中文翻译
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          相关网页中文翻译
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../区块链常识/中文网页/区块链分叉-中文网页/区块链分叉.md" class="md-nav__link">
+        区块链分叉
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE%E5%88%86%E5%8F%89-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E4%BB%80%E4%B9%88%E6%98%AF%E5%88%86%E5%8F%89%EF%BC%9F/" class="md-nav__link">
+        什么是分叉？
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE%E5%88%86%E5%8F%89-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E4%BB%80%E4%B9%88%E6%98%AF%E7%A1%AC%E5%88%86%E5%8F%89%EF%BC%9F/" class="md-nav__link">
+        什么是硬分叉？
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+          加密货币
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          加密货币
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81/" class="md-nav__link">
+        正文
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_5_2" id="__nav_3_5_2_label" tabindex="0">
+          相关网页中文翻译
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_5_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_5_2">
+          <span class="md-nav__icon md-icon"></span>
+          相关网页中文翻译
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E4%BB%80%E4%B9%88%E6%98%AF%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81%EF%BC%9F/" class="md-nav__link">
+        什么是加密货币？
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81%E6%98%AF%E4%BB%80%E4%B9%88%E4%BB%A5%E5%8F%8A%E6%98%AF%E6%80%8E%E6%A0%B7%E8%BF%90%E4%BD%9C%E7%9A%84%EF%BC%9F/" class="md-nav__link">
+        加密货币是什么以及是怎样运作的？
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../区块链常识/中文网页/加密货币-中文网页/加密货币的实际运作方式.md" class="md-nav__link">
+        加密货币的实际运作方式
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+          加密钱包
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_6">
+          <span class="md-nav__icon md-icon"></span>
+          加密钱包
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E5%8A%A0%E5%AF%86%E9%92%B1%E5%8C%85/" class="md-nav__link">
+        正文
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_6_2" id="__nav_3_6_2_label" tabindex="0">
+          相关网页中文翻译
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_6_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_6_2">
+          <span class="md-nav__icon md-icon"></span>
+          相关网页中文翻译
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8A%A0%E5%AF%86%E9%92%B1%E5%8C%85-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E4%BB%80%E4%B9%88%E6%98%AF%E5%8C%BA%E5%9D%97%E9%93%BE%E9%92%B1%E5%8C%85%EF%BC%9F/" class="md-nav__link">
+        什么是区块链钱包？
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8A%A0%E5%AF%86%E9%92%B1%E5%8C%85-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E4%BB%80%E4%B9%88%E6%98%AF%E5%8A%A0%E5%AF%86%E9%92%B1%E5%8C%85%EF%BC%9F%20%E5%88%9D%E5%AD%A6%E8%80%85%E6%8C%87%E5%8D%97/" class="md-nav__link">
+        什么是加密钱包？ 初学者指南
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+          密码学
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_7">
+          <span class="md-nav__icon md-icon"></span>
+          密码学
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E5%AF%86%E7%A0%81%E5%AD%A6/" class="md-nav__link">
+        正文
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_7_2" id="__nav_3_7_2_label" tabindex="0">
+          相关网页中文翻译
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_7_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_7_2">
+          <span class="md-nav__icon md-icon"></span>
+          相关网页中文翻译
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../区块链常识/中文网页/密码学-中文网页/密码学.md" class="md-nav__link">
+        密码学
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%AF%86%E7%A0%81%E5%AD%A6-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E4%BB%80%E4%B9%88%E6%98%AF%E5%AF%86%E7%A0%81%E5%AD%A6%EF%BC%9F/" class="md-nav__link">
+        什么是密码学？
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../区块链常识/中文网页/密码学-中文网页/非对称加密 - 简单解释.md" class="md-nav__link">
+        非对称加密 - 简单解释
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../区块链常识/中文网页/密码学-中文网页/学习密码学.md" class="md-nav__link">
+        学习密码学
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+          共识协议
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_8">
+          <span class="md-nav__icon md-icon"></span>
+          共识协议
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E5%85%B1%E8%AF%86%E5%8D%8F%E8%AE%AE/" class="md-nav__link">
+        正文
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_8_2" id="__nav_3_8_2_label" tabindex="0">
+          相关网页中文翻译
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_8_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_8_2">
+          <span class="md-nav__icon md-icon"></span>
+          相关网页中文翻译
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%85%B1%E8%AF%86%E5%8D%8F%E8%AE%AE-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE%E4%B8%AD%E7%9A%84%E5%85%B1%E8%AF%86%E6%9C%BA%E5%88%B6%EF%BC%9A%E5%88%9D%E5%AD%A6%E8%80%85%E6%8C%87%E5%8D%97/" class="md-nav__link">
+        区块链中的共识机制：初学者指南
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../区块链常识/中文网页/共识协议-中文网页/共识机制.md" class="md-nav__link">
+        共识机制
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%85%B1%E8%AF%86%E5%8D%8F%E8%AE%AE-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E4%BB%80%E4%B9%88%E6%98%AF%E5%85%B1%E8%AF%86%E6%9C%BA%E5%88%B6%EF%BC%9F/" class="md-nav__link">
+        什么是共识机制？
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_9" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_9" id="__nav_3_9_label" tabindex="0">
+          区块链互操作性
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_9_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_9">
+          <span class="md-nav__icon md-icon"></span>
+          区块链互操作性
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E5%8C%BA%E5%9D%97%E9%93%BE%E4%BA%92%E6%93%8D%E4%BD%9C%E6%80%A7/" class="md-nav__link">
+        正文
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_9_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_9_2" id="__nav_3_9_2_label" tabindex="0">
+          相关网页中文翻译
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_9_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_9_2">
+          <span class="md-nav__icon md-icon"></span>
+          相关网页中文翻译
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE%E4%BA%92%E6%93%8D%E4%BD%9C%E6%80%A7-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E8%B7%A8%E9%93%BE%E4%BA%92%E6%93%8D%E4%BD%9C%E6%80%A7%EF%BC%9A%E5%AF%B9%E5%8C%BA%E5%9D%97%E9%93%BE%E6%84%8F%E5%91%B3%E7%9D%80%E4%BB%80%E4%B9%88/" class="md-nav__link">
+        跨链互操作性：对区块链意味着什么
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE%E4%BA%92%E6%93%8D%E4%BD%9C%E6%80%A7-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE%E4%BA%92%E6%93%8D%E4%BD%9C%E6%80%A7%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%B7%A8%E9%93%BE%E6%8A%80%E6%9C%AF%E5%BE%88%E9%87%8D%E8%A6%81%EF%BC%9F/" class="md-nav__link">
+        区块链互操作性：为什么跨链技术很重要？
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE%E4%BA%92%E6%93%8D%E4%BD%9C%E6%80%A7-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE%E4%BA%92%E6%93%8D%E4%BD%9C%E6%80%A7%E2%80%94%E2%80%94%E4%BA%86%E8%A7%A3%E8%B7%A8%E9%93%BE%E6%8A%80%E6%9C%AF/" class="md-nav__link">
+        区块链互操作性——了解跨链技术
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_10" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_10" id="__nav_3_10_label" tabindex="0">
+          区块链
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_10_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_10">
+          <span class="md-nav__icon md-icon"></span>
+          区块链
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E5%8C%BA%E5%9D%97%E9%93%BE/%E5%8C%BA%E5%9D%97%E9%93%BE/" class="md-nav__link">
+        正文
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E5%8C%BA%E5%9D%97%E9%93%BE/Solana/" class="md-nav__link">
+        Solana
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E5%8C%BA%E5%9D%97%E9%93%BE/TON/" class="md-nav__link">
+        TON
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E5%8C%BA%E5%9D%97%E9%93%BE/%E5%9F%BA%E4%BA%8EEVM/" class="md-nav__link">
+        基于EVM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E5%8C%BA%E5%9D%97%E9%93%BE/L2%E5%8C%BA%E5%9D%97%E9%93%BE/" class="md-nav__link">
+        L2区块链
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_10_6" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_10_6" id="__nav_3_10_6_label" tabindex="0">
+          相关网页中文翻译
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_10_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_10_6">
+          <span class="md-nav__icon md-icon"></span>
+          相关网页中文翻译
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_10_6_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_10_6_1" id="__nav_3_10_6_1_label" tabindex="0">
+          正文开头
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_10_6_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_10_6_1">
+          <span class="md-nav__icon md-icon"></span>
+          正文开头
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E6%AD%A3%E6%96%87%E5%BC%80%E5%A4%B4/%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E7%B1%BB%E5%9E%8B%EF%BC%9APoW%E3%80%81PoS%20%E5%92%8C%E7%A7%81%E6%9C%89/" class="md-nav__link">
+        区块链的类型：PoW、PoS 和私有
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E6%AD%A3%E6%96%87%E5%BC%80%E5%A4%B4/%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E7%B1%BB%E5%9E%8B/" class="md-nav__link">
+        区块链的类型
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_10_6_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_10_6_2" id="__nav_3_10_6_2_label" tabindex="0">
+          Solana
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_10_6_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_10_6_2">
+          <span class="md-nav__icon md-icon"></span>
+          Solana
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/Solana/%E4%BB%80%E4%B9%88%E6%98%AF%20Solana%EF%BC%8C%E5%AE%83%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84%EF%BC%9F/" class="md-nav__link">
+        什么是 Solana，它是如何工作的？
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/Solana/Solana%20%E5%88%9D%E5%AD%A6%E8%80%85%E6%8C%87%E5%8D%97/" class="md-nav__link">
+        Solana 初学者指南
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/Solana/Solana%E7%AE%80%E4%BB%8B/" class="md-nav__link">
+        Solana简介
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/Solana/Solana%E6%9E%B6%E6%9E%84/" class="md-nav__link">
+        Solana架构
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../区块链常识/中文网页/区块链-中文网页/Solana/开始构建 Solana！.md" class="md-nav__link">
+        开始构建 Solana！
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_10_6_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_10_6_3" id="__nav_3_10_6_3_label" tabindex="0">
+          TON
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_10_6_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_10_6_3">
+          <span class="md-nav__icon md-icon"></span>
+          TON
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/TON/TON%20Telegram%20%E9%9B%86%E6%88%90%E7%AA%81%E5%87%BA%E4%BA%86%E5%8C%BA%E5%9D%97%E9%93%BE%E7%A4%BE%E5%8C%BA%E7%9A%84%E5%8D%8F%E5%90%8C%E4%BD%9C%E7%94%A8/" class="md-nav__link">
+        TON Telegram 集成突出了区块链社区的协同作用
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../区块链常识/中文网页/区块链-中文网页/TON/开始在开放网络上构建.md" class="md-nav__link">
+        开始在开放网络上构建
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/TON/TON%E7%AE%80%E4%BB%8B/" class="md-nav__link">
+        TON简介
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/TON/%E5%8C%BA%E5%9D%97%E9%93%BE%E5%88%86%E6%9E%90/" class="md-nav__link">
+        区块链分析
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_10_6_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_10_6_4" id="__nav_3_10_6_4_label" tabindex="0">
+          基于EVM
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_10_6_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_10_6_4">
+          <span class="md-nav__icon md-icon"></span>
+          基于EVM
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%9F%BA%E4%BA%8EEVM/%E4%BB%80%E4%B9%88%E6%98%AF%E4%BB%A5%E5%A4%AA%E5%9D%8A%E8%99%9A%E6%8B%9F%E6%9C%BA%EF%BC%9F/" class="md-nav__link">
+        什么是以太坊虚拟机？
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_10_6_4_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_10_6_4_2" id="__nav_3_10_6_4_2_label" tabindex="0">
+          以太坊
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_3_10_6_4_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_10_6_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          以太坊
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../区块链常识/中文网页/区块链-中文网页/基于EVM/以太坊/以太坊白皮书.md" class="md-nav__link">
+        以太坊白皮书
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../区块链常识/中文网页/区块链-中文网页/基于EVM/以太坊/以太坊介绍.md" class="md-nav__link">
+        以太坊介绍
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%9F%BA%E4%BA%8EEVM/%E4%BB%A5%E5%A4%AA%E5%9D%8A/%E4%BB%A5%E5%A4%AA%E5%9D%8A%E7%AE%80%E4%BB%8B/" class="md-nav__link">
+        以太坊简介
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_10_6_4_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_10_6_4_3" id="__nav_3_10_6_4_3_label" tabindex="0">
+          Polygon
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_3_10_6_4_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_10_6_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          Polygon
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%9F%BA%E4%BA%8EEVM/Polygon/Polygon%E7%99%BD%E7%9A%AE%E4%B9%A6/" class="md-nav__link">
+        Polygon白皮书
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%9F%BA%E4%BA%8EEVM/Polygon/%E4%BB%8B%E7%BB%8DPolygon/" class="md-nav__link">
+        介绍Polygon
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_10_6_4_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_10_6_4_4" id="__nav_3_10_6_4_4_label" tabindex="0">
+          币安智能链
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_3_10_6_4_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_10_6_4_4">
+          <span class="md-nav__icon md-icon"></span>
+          币安智能链
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%9F%BA%E4%BA%8EEVM/%E5%B8%81%E5%AE%89%E6%99%BA%E8%83%BD%E9%93%BE/%E5%B8%81%E5%AE%89%E7%99%BD%E7%9A%AE%E4%B9%A6/" class="md-nav__link">
+        币安白皮书
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%9F%BA%E4%BA%8EEVM/%E5%B8%81%E5%AE%89%E6%99%BA%E8%83%BD%E9%93%BE/BNB%E9%93%BE%E6%A6%82%E8%BF%B0/" class="md-nav__link">
+        BNB链概述
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_10_6_4_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_10_6_4_5" id="__nav_3_10_6_4_5_label" tabindex="0">
+          灵知链
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_3_10_6_4_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_10_6_4_5">
+          <span class="md-nav__icon md-icon"></span>
+          灵知链
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%9F%BA%E4%BA%8EEVM/%E7%81%B5%E7%9F%A5%E9%93%BE/Gnosis%E7%99%BD%E7%9A%AE%E4%B9%A6/" class="md-nav__link">
+        Gnosis白皮书
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../区块链常识/中文网页/区块链-中文网页/基于EVM/灵知链/Gnosis 概述.md" class="md-nav__link">
+        Gnosis 概述
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_10_6_4_6" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_10_6_4_6" id="__nav_3_10_6_4_6_label" tabindex="0">
+          火币生态链
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_3_10_6_4_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_10_6_4_6">
+          <span class="md-nav__icon md-icon"></span>
+          火币生态链
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%9F%BA%E4%BA%8EEVM/%E7%81%AB%E5%B8%81%E7%94%9F%E6%80%81%E9%93%BE/%E7%81%AB%E5%B8%81%E7%94%9F%E6%80%81%E9%93%BE%E7%99%BD%E7%9A%AE%E4%B9%A6/" class="md-nav__link">
+        火币生态链白皮书
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%9F%BA%E4%BA%8EEVM/%E7%81%AB%E5%B8%81%E7%94%9F%E6%80%81%E9%93%BE/HECO%E9%93%BE%E4%BB%8B%E7%BB%8D/" class="md-nav__link">
+        HECO链介绍
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_10_6_4_7" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_10_6_4_7" id="__nav_3_10_6_4_7_label" tabindex="0">
+          Avalanche
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_3_10_6_4_7_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_10_6_4_7">
+          <span class="md-nav__icon md-icon"></span>
+          Avalanche
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%9F%BA%E4%BA%8EEVM/Avalanche/Avalanche%20%E7%99%BD%E7%9A%AE%E4%B9%A6/" class="md-nav__link">
+        Avalanche 白皮书
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../区块链常识/中文网页/区块链-中文网页/基于EVM/Avalanche/官网.md" class="md-nav__link">
+        官网
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_10_6_4_8" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_10_6_4_8" id="__nav_3_10_6_4_8_label" tabindex="0">
+          Fantom
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_3_10_6_4_8_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_10_6_4_8">
+          <span class="md-nav__icon md-icon"></span>
+          Fantom
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%9F%BA%E4%BA%8EEVM/Fantom/Fantom%E7%99%BD%E7%9A%AE%E4%B9%A6/" class="md-nav__link">
+        Fantom白皮书
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../区块链常识/中文网页/区块链-中文网页/基于EVM/Fantom/Fantom概览.md" class="md-nav__link">
+        Fantom概览
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_10_6_4_9" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_10_6_4_9" id="__nav_3_10_6_4_9_label" tabindex="0">
+          Moonbeam/Moonriver
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_3_10_6_4_9_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_10_6_4_9">
+          <span class="md-nav__icon md-icon"></span>
+          Moonbeam/Moonriver
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../区块链常识/中文网页/区块链-中文网页/基于EVM/Moonbeam&Moonriver/关于Moonbream.md" class="md-nav__link">
+        关于Moonbream
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../区块链常识/中文网页/区块链-中文网页/基于EVM/Moonbeam&Moonriver/Moonbeam概览.md" class="md-nav__link">
+        Moonbeam概览
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_10_6_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_10_6_5" id="__nav_3_10_6_5_label" tabindex="0">
+          L2区块链
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_10_6_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_10_6_5">
+          <span class="md-nav__icon md-icon"></span>
+          L2区块链
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/L2%E5%8C%BA%E5%9D%97%E9%93%BE/Layer-1%20%E5%92%8C%20Layer-2%20%E5%8C%BA%E5%9D%97%E9%93%BE%E6%89%A9%E5%B1%95%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" class="md-nav__link">
+        Layer-1 和 Layer-2 区块链扩展解决方案
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/L2%E5%8C%BA%E5%9D%97%E9%93%BE/Layer-%202%20%E5%B8%81%E5%AE%89%E5%AD%A6%E9%99%A2/" class="md-nav__link">
+        Layer- 2 币安学院
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_10_6_5_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_10_6_5_3" id="__nav_3_10_6_5_3_label" tabindex="0">
+          Arbitrum
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_3_10_6_5_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_10_6_5_3">
+          <span class="md-nav__icon md-icon"></span>
+          Arbitrum
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/L2%E5%8C%BA%E5%9D%97%E9%93%BE/Arbitrum/Arbitrum%E7%99%BD%E7%9A%AE%E4%B9%A6/" class="md-nav__link">
+        Arbitrum白皮书
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/L2%E5%8C%BA%E5%9D%97%E9%93%BE/Arbitrum/Arbitrum%E5%86%85%E6%A0%B8/" class="md-nav__link">
+        Arbitrum内核
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_11" id="__nav_3_11_label" tabindex="0">
+          more
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_11_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_11">
+          <span class="md-nav__icon md-icon"></span>
+          more
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%8C%BA%E5%9D%97%E9%93%BE%E5%B8%B8%E8%AF%86/more/" class="md-nav__link">
+        正文
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_11_2" id="__nav_3_11_2_label" tabindex="0">
+          相关网页中文翻译
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_11_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_11_2">
+          <span class="md-nav__icon md-icon"></span>
+          相关网页中文翻译
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../区块链常识/中文网页/区块链常识-中文网页/了解区块链技术的完整课程.md" class="md-nav__link">
+        了解区块链技术的完整课程
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../区块链常识/中文网页/区块链常识-中文网页/区块链技术解释.md" class="md-nav__link">
+        区块链技术解释
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          Oracles
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Oracles
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+          区块链预言机
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_1">
+          <span class="md-nav__icon md-icon"></span>
+          区块链预言机
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Oracles/%E5%8C%BA%E5%9D%97%E9%93%BE%E9%A2%84%E8%A8%80%E6%9C%BA/" class="md-nav__link">
+        正文
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_1_2" id="__nav_4_1_2_label" tabindex="0">
+          相关网页中文翻译
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_1_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_1_2">
+          <span class="md-nav__icon md-icon"></span>
+          相关网页中文翻译
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Oracles/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8C%BA%E5%9D%97%E9%93%BE%E9%A2%84%E8%A8%80%E6%9C%BA-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E4%BB%80%E4%B9%88%E6%98%AF%E5%8C%BA%E5%9D%97%E9%93%BE%E9%A2%84%E8%A8%80%E6%9C%BA%EF%BC%9F/" class="md-nav__link">
+        什么是区块链预言机？
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+          混合智能合约
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          混合智能合约
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Oracles/%E6%B7%B7%E5%90%88%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6/" class="md-nav__link">
+        正文
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_2_2" id="__nav_4_2_2_label" tabindex="0">
+          相关网页中文翻译
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          相关网页中文翻译
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Oracles/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E6%B7%B7%E5%90%88%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E6%B7%B7%E5%90%88%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%E8%A7%A3%E9%87%8A/" class="md-nav__link">
+        混合智能合约解释
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Oracles/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E6%B7%B7%E5%90%88%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E4%BA%86%E8%A7%A3%E6%B7%B7%E5%90%88%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%E7%9A%84%E5%AE%8C%E6%95%B4%E6%8C%87%E5%8D%97/" class="md-nav__link">
+        了解混合智能合约的完整指南
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+          Chainlink
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          Chainlink
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Oracles/Chainlink/" class="md-nav__link">
+        正文
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_3_2" id="__nav_4_3_2_label" tabindex="0">
+          相关网页中文翻译
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          相关网页中文翻译
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Oracles/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/Chianlink-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E4%BB%80%E4%B9%88%E6%98%AFChainlink%EF%BC%9F/" class="md-nav__link">
+        什么是Chainlink？
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Oracles/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/Chianlink-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/5%20%E5%88%86%E9%92%9F%E4%BA%86%E8%A7%A3%20Chainlink/" class="md-nav__link">
+        5 分钟了解 Chainlink
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+          Oracles 网络
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_4">
+          <span class="md-nav__icon md-icon"></span>
+          Oracles 网络
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Oracles/Oracles%E7%BD%91%E7%BB%9C/" class="md-nav__link">
+        正文
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_4_2" id="__nav_4_4_2_label" tabindex="0">
+          相关网页中文翻译
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_4_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          相关网页中文翻译
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Oracles/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/Oracles%E7%BD%91%E7%BB%9C-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%88%86%E6%95%A3%E7%9A%84%20Oracle%20%E7%BD%91%E7%BB%9C/" class="md-nav__link">
+        分散的 Oracle 网络
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Oracles/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/Oracles%E7%BD%91%E7%BB%9C-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%88%86%E6%95%A3%E7%9A%84%20Oracle%20%E7%BD%91%E7%BB%9C/" class="md-nav__link">
+        去中心化 Oracle 网络发展的新手指南
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Oracles/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/Oracles%E7%BD%91%E7%BB%9C-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E4%BA%86%E8%A7%A3Oracle%20%E7%BD%91%E7%BB%9C/" class="md-nav__link">
+        了解Oracle 网络
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          智能合约
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          智能合约
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+          智能合约
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_5_1">
+          <span class="md-nav__icon md-icon"></span>
+          智能合约
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6/" class="md-nav__link">
+        正文
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1_2" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_1_2" id="__nav_5_1_2_label" tabindex="0">
+          相关网页中文翻译
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_1_2_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_5_1_2">
+          <span class="md-nav__icon md-icon"></span>
+          相关网页中文翻译
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        智能合约简介
+      </a>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E4%BB%80%E4%B9%88%E6%98%AF%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%EF%BC%9F/" class="md-nav__link">
+        什么是智能合约？
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%20-%20%E7%AE%80%E5%8D%95%E8%A7%A3%E9%87%8A/" class="md-nav__link">
+        智能合约 - 简单解释
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+          ERC代币
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_2">
+          <span class="md-nav__icon md-icon"></span>
+          ERC代币
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ERC%E4%BB%A3%E5%B8%81/" class="md-nav__link">
+        正文
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+          加密钱包
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_3">
+          <span class="md-nav__icon md-icon"></span>
+          加密钱包
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E5%8A%A0%E5%AF%86%E9%92%B1%E5%8C%85/" class="md-nav__link">
+        正文
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_3_2" id="__nav_5_3_2_label" tabindex="0">
+          相关网页中文翻译
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_3_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          相关网页中文翻译
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%8A%A0%E5%AF%86%E9%92%B1%E5%8C%85-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E4%BB%80%E4%B9%88%E6%98%AF%E5%8C%BA%E5%9D%97%E9%93%BE%E9%92%B1%E5%8C%85%EF%BC%9F/" class="md-nav__link">
+        什么是区块链钱包？
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%8A%A0%E5%AF%86%E9%92%B1%E5%8C%85-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E4%BB%80%E4%B9%88%E6%98%AF%E5%8A%A0%E5%AF%86%E9%92%B1%E5%8C%85%EF%BC%9F%20%E5%88%9D%E5%AD%A6%E8%80%85%E6%8C%87%E5%8D%97/" class="md-nav__link">
+        什么是加密钱包？ 初学者指南
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
+          加密水龙头（Crypto Faucets）
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_4">
+          <span class="md-nav__icon md-icon"></span>
+          加密水龙头（Crypto Faucets）
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E5%8A%A0%E5%AF%86%E6%B0%B4%E9%BE%99%E5%A4%B4%EF%BC%88Crypto%20Faucets%EF%BC%89/" class="md-nav__link">
+        正文
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_4_2" id="__nav_5_4_2_label" tabindex="0">
+          相关网页中文翻译
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_4_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          相关网页中文翻译
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%9B%86%E6%88%90%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%EF%BC%88IDEs%EF%BC%89-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E4%BB%80%E4%B9%88%E6%98%AF%E5%8A%A0%E5%AF%86%E6%B0%B4%E9%BE%99%E5%A4%B4%EF%BC%9F/" class="md-nav__link">
+        什么是加密水龙头？
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%9B%86%E6%88%90%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%EF%BC%88IDEs%EF%BC%89-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E4%BB%80%E4%B9%88%E6%98%AF%E5%8A%A0%E5%AF%86%E6%B0%B4%E9%BE%99%E5%A4%B4%EF%BC%8C%E4%BB%A5%E5%8F%8A%E5%AE%83%E4%BB%AC%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84%EF%BC%9F/" class="md-nav__link">
+        什么是加密水龙头，以及它们是如何工作的?
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_5" id="__nav_5_5_label" tabindex="0">
+          去中心化存储
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_5">
+          <span class="md-nav__icon md-icon"></span>
+          去中心化存储
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E5%AD%98%E5%82%A8/" class="md-nav__link">
+        正文
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_5_2" id="__nav_5_5_2_label" tabindex="0">
+          相关网页中文翻译
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_5_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_5_2">
+          <span class="md-nav__icon md-icon"></span>
+          相关网页中文翻译
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E5%AD%98%E5%82%A8-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E4%BB%80%E4%B9%88%E6%98%AF%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E5%AD%98%E5%82%A8%EF%BC%9F/" class="md-nav__link">
+        什么是去中心化存储？
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E5%AD%98%E5%82%A8-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E5%AD%98%E5%82%A8/" class="md-nav__link">
+        去中心化存储
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_6" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_6" id="__nav_5_6_label" tabindex="0">
+          测试
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_6">
+          <span class="md-nav__icon md-icon"></span>
+          测试
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%B5%8B%E8%AF%95/" class="md-nav__link">
+        正文
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_6_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_6_2" id="__nav_5_6_2_label" tabindex="0">
+          相关网页中文翻译
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_6_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_6_2">
+          <span class="md-nav__icon md-icon"></span>
+          相关网页中文翻译
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%B5%8B%E8%AF%95-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%A6%82%E4%BD%95%E6%B5%8B%E8%AF%95%E4%BB%A5%E5%A4%AA%E5%9D%8A%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6/" class="md-nav__link">
+        如何测试以太坊智能合约
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%B5%8B%E8%AF%95-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E7%BC%96%E5%86%99%E8%87%AA%E5%8A%A8%E5%8C%96%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%E6%B5%8B%E8%AF%95/" class="md-nav__link">
+        编写自动化智能合约测试
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%B5%8B%E8%AF%95-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%9C%A8%20Solidity%20%E4%B8%AD%E5%AF%B9%E4%BB%A5%E5%A4%AA%E5%9D%8A%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E7%9A%84%E6%8A%80%E5%B7%A7/" class="md-nav__link">
+        在 Solidity 中对以太坊智能合约进行单元测试的技巧
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%B5%8B%E8%AF%95-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/Hardhat%20%E4%B8%AD%E7%9A%84%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%E4%BB%A3%E7%A0%81%E8%A6%86%E7%9B%96%E7%8E%87/" class="md-nav__link">
+        Hardhat 中的智能合约代码覆盖率
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_7" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_7" id="__nav_5_7_label" tabindex="0">
+          部署
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_7_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_7">
+          <span class="md-nav__icon md-icon"></span>
+          部署
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E9%83%A8%E7%BD%B2/" class="md-nav__link">
+        正文
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_7_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_7_2" id="__nav_5_7_2_label" tabindex="0">
+          相关网页中文翻译
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_7_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_7_2">
+          <span class="md-nav__icon md-icon"></span>
+          相关网页中文翻译
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E9%83%A8%E7%BD%B2-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E9%83%A8%E7%BD%B2%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%E5%B9%B6%E4%B8%8E%E4%B9%8B%E4%BA%A4%E4%BA%92/" class="md-nav__link">
+        部署智能合约并与之交互
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_8" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_8" id="__nav_5_8_label" tabindex="0">
+          监控
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_8_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_8">
+          <span class="md-nav__icon md-icon"></span>
+          监控
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%9B%91%E6%8E%A7/" class="md-nav__link">
+        正文
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_9" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_9" id="__nav_5_9_label" tabindex="0">
+          升级
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_9_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_9">
+          <span class="md-nav__icon md-icon"></span>
+          升级
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E5%8D%87%E7%BA%A7/" class="md-nav__link">
+        正文
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_9_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_9_2" id="__nav_5_9_2_label" tabindex="0">
+          相关网页中文翻译
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_9_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_9_2">
+          <span class="md-nav__icon md-icon"></span>
+          相关网页中文翻译
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%8D%87%E7%BA%A7-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%8D%87%E7%BA%A7%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6/" class="md-nav__link">
+        升级智能合约
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%8D%87%E7%BA%A7-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E4%BB%80%E4%B9%88%E6%98%AF%E5%8F%AF%E5%8D%87%E7%BA%A7%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%EF%BC%9F%20%E5%AE%8C%E6%95%B4%E6%8C%87%E5%8D%97/" class="md-nav__link">
+        什么是可升级智能合约？ 完整指南
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          编程语言
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          编程语言
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80-%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6/" class="md-nav__link">
+        编程语言-智能合约
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+          智能合约
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6_2">
+          <span class="md-nav__icon md-icon"></span>
+          智能合约
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6/Solidity/" class="md-nav__link">
+        Solidity
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6/Vyper/" class="md-nav__link">
+        Vyper
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6/Rust/" class="md-nav__link">
+        Rust
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80-%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%E5%91%A8%E8%BE%B9%E5%BC%80%E5%8F%91/" class="md-nav__link">
+        编程语言-智能合约周边开发
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_4" id="__nav_6_4_label" tabindex="0">
+          智能合约 周边开发
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6_4">
+          <span class="md-nav__icon md-icon"></span>
+          智能合约 周边开发
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%20%E5%91%A8%E8%BE%B9%E5%BC%80%E5%8F%91/JavaScript/" class="md-nav__link">
+        JavaScript
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%20%E5%91%A8%E8%BE%B9%E5%BC%80%E5%8F%91/Go/" class="md-nav__link">
+        Go
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%20%E5%91%A8%E8%BE%B9%E5%BC%80%E5%8F%91/Python/" class="md-nav__link">
+        Python
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_5" id="__nav_6_5_label" tabindex="0">
+          相关网页中文翻译
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6_5">
+          <span class="md-nav__icon md-icon"></span>
+          相关网页中文翻译
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%A6%82%E4%BD%95%E5%9C%A8%20Rust%20%E4%B8%AD%E7%BC%96%E5%86%99%E5%92%8C%E9%83%A8%E7%BD%B2%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/" class="md-nav__link">
+        如何在 Rust 中编写和部署智能合约
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%9C%A8%20Y%20%E5%88%86%E9%92%9F%E5%86%85%E5%AD%A6%E4%B9%A0%20Vyper-%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/" class="md-nav__link">
+        在 Y 分钟内学习 Vyper
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          智能合约框架
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          智能合约框架
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%E6%A1%86%E6%9E%B6/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%E6%A1%86%E6%9E%B6/" class="md-nav__link">
+        智能合约框架
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+          相关网页中文翻译
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_7_2">
+          <span class="md-nav__icon md-icon"></span>
+          相关网页中文翻译
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%E6%A1%86%E6%9E%B6/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E4%BB%A5%E5%A4%AA%E5%9D%8A%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7%E7%9A%84%E6%9D%83%E5%A8%81%E5%88%97%E8%A1%A8%20-%20%E6%A1%86%E6%9E%B6/" class="md-nav__link">
+        以太坊开发者工具的权威列表 - 框架
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%E6%A1%86%E6%9E%B6/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/2022%20%E5%B9%B4%E6%82%A8%E9%9C%80%E8%A6%81%E7%9A%84%2010%20%E5%A4%A7%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/" class="md-nav__link">
+        2022 年您需要的 10 大智能合约开发工具
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+          安全
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          安全
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%AE%89%E5%85%A8/%E5%AE%89%E5%85%A8/" class="md-nav__link">
+        安全
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%AE%89%E5%85%A8/%E5%AE%9E%E8%B7%B5/" class="md-nav__link">
+        实践
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%AE%89%E5%85%A8/%E5%B7%A5%E5%85%B7/" class="md-nav__link">
+        工具
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8_4" id="__nav_8_4_label" tabindex="0">
+          相关网页中文翻译
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_8_4">
+          <span class="md-nav__icon md-icon"></span>
+          相关网页中文翻译
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%AE%89%E5%85%A8/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E4%BB%A5%E5%A4%AA%E5%9D%8A%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%E5%AE%89%E5%85%A8%E5%BB%BA%E8%AE%AE/" class="md-nav__link">
+        以太坊智能合约安全建议
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_4_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8_4_2" id="__nav_8_4_2_label" tabindex="0">
+          实践
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_4_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_8_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          实践
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%AE%89%E5%85%A8/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%AE%9E%E8%B7%B5/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%E6%A8%A1%E7%B3%8A%E6%B5%8B%E8%AF%95%E5%85%A5%E9%97%A8/" class="md-nav__link">
+        智能合约模糊测试入门
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%AE%89%E5%85%A8/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%AE%9E%E8%B7%B5/Solidity%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%E9%9D%99%E6%80%81%E4%BB%A3%E7%A0%81%E5%88%86%E6%9E%90/" class="md-nav__link">
+        Solidity智能合约静态代码分析
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%AE%89%E5%85%A8/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%AE%9E%E8%B7%B5/Solidity%20Security%EF%BC%9A%E5%B7%B2%E7%9F%A5%E6%94%BB%E5%87%BB%E5%90%91%E9%87%8F%E5%92%8C%E5%B8%B8%E8%A7%81%E5%8F%8D%E6%A8%A1%E5%BC%8F%E7%9A%84%E7%BB%BC%E5%90%88%E5%88%97%E8%A1%A8/" class="md-nav__link">
+        Solidity Security：已知攻击向量和常见反模式的综合列表
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%AE%89%E5%85%A8/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%AE%9E%E8%B7%B5/%E5%8C%BA%E5%9D%97%E9%93%BE%E6%94%BB%E5%87%BB%E5%90%91%E9%87%8F%EF%BC%9A%E6%9C%80%E5%AE%89%E5%85%A8%E6%8A%80%E6%9C%AF%E7%9A%84%E6%BC%8F%E6%B4%9E/" class="md-nav__link">
+        区块链攻击向量：最安全技术的漏洞
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%AE%89%E5%85%A8/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%AE%9E%E8%B7%B5/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%E9%9A%8F%E6%9C%BA%E6%80%A7%E6%88%96%E5%A4%8D%E5%88%B6%E9%80%BB%E8%BE%91%E6%94%BB%E5%87%BB/" class="md-nav__link">
+        智能合约随机性或复制逻辑攻击
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+          管理平台
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          管理平台
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0/%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0/" class="md-nav__link">
+        管理平台
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+          版本控制系统
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_10">
+          <span class="md-nav__icon md-icon"></span>
+          版本控制系统
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F/" class="md-nav__link">
+        版本控制系统
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+          代码托管服务
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_11">
+          <span class="md-nav__icon md-icon"></span>
+          代码托管服务
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E4%BB%A3%E7%A0%81%E6%89%98%E7%AE%A1%E6%9C%8D%E5%8A%A1/%E4%BB%A3%E7%A0%81%E6%89%98%E7%AE%A1%E6%9C%8D%E5%8A%A1/" class="md-nav__link">
+        代码托管服务
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E4%BB%A3%E7%A0%81%E6%89%98%E7%AE%A1%E6%9C%8D%E5%8A%A1/Github/" class="md-nav__link">
+        GitHub
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E4%BB%A3%E7%A0%81%E6%89%98%E7%AE%A1%E6%9C%8D%E5%8A%A1/GitLab/" class="md-nav__link">
+        GitLab
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E4%BB%A3%E7%A0%81%E6%89%98%E7%AE%A1%E6%9C%8D%E5%8A%A1/Bitbucket/" class="md-nav__link">
+        Bitbucket
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_11_5" id="__nav_11_5_label" tabindex="0">
+          相关中文网页翻译
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_11_5">
+          <span class="md-nav__icon md-icon"></span>
+          相关中文网页翻译
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E4%BB%A3%E7%A0%81%E6%89%98%E7%AE%A1%E6%9C%8D%E5%8A%A1/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%B8%93%E4%B8%9A%E5%BC%80%E5%8F%91%E5%9B%A2%E9%98%9F%E4%B8%AD%E4%BD%BF%E7%94%A8%20Git/" class="md-nav__link">
+        如何在专业开发团队中使用 Git
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+          Dapp
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_12">
+          <span class="md-nav__icon md-icon"></span>
+          Dapp
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Dapp/Dapp/" class="md-nav__link">
+        dapp
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12_2" id="__nav_12_2_label" tabindex="0">
+          前端框架
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_12_2">
+          <span class="md-nav__icon md-icon"></span>
+          前端框架
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Dapp/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6/" class="md-nav__link">
+        前端框架
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Dapp/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6/React/" class="md-nav__link">
+        React
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Dapp/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6/Angular/" class="md-nav__link">
+        Angular
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Dapp/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6/vue.js/" class="md-nav__link">
+        Vue.js
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Dapp/%E6%B5%8B%E8%AF%95/" class="md-nav__link">
+        测试
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Dapp/%E9%83%A8%E7%BD%B2/" class="md-nav__link">
+        部署
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Dapp/%E7%BB%B4%E6%8A%A4/" class="md-nav__link">
+        维护
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Dapp/%E4%BD%93%E7%B3%BB/" class="md-nav__link">
+        体系
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Dapp/%E5%AE%89%E5%85%A8/" class="md-nav__link">
+        安全
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_8" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12_8" id="__nav_12_8_label" tabindex="0">
+          适用性
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_8_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_12_8">
+          <span class="md-nav__icon md-icon"></span>
+          适用性
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Dapp/%E9%80%82%E7%94%A8%E6%80%A7/%E9%80%82%E7%94%A8%E6%80%A7/" class="md-nav__link">
+        适用性
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Dapp/%E9%80%82%E7%94%A8%E6%80%A7/%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E9%87%91%E8%9E%8D%EF%BC%88DeFi%EF%BC%89/" class="md-nav__link">
+        去中心化金融（DeFi）
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Dapp/%E9%80%82%E7%94%A8%E6%80%A7/DAO/" class="md-nav__link">
+        DAO
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Dapp/%E9%80%82%E7%94%A8%E6%80%A7/NFTs/" class="md-nav__link">
+        NFTs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Dapp/%E9%80%82%E7%94%A8%E6%80%A7/%E4%BB%98%E6%AC%BE/" class="md-nav__link">
+        付款
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Dapp/%E9%80%82%E7%94%A8%E6%80%A7/%E4%BF%9D%E9%99%A9/" class="md-nav__link">
+        保险
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Dapp/%E8%8A%82%E7%82%B9%E5%8F%8A%E6%9C%8D%E5%8A%A1%EF%BC%88NaaS%EF%BC%89/%E8%8A%82%E7%82%B9%E5%8D%B3%E6%9C%8D%E5%8A%A1%20%28NaaS%29/" class="md-nav__link">
+        节点及服务(NaaS)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Dapp/%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%BA%93/%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%BA%93/" class="md-nav__link">
+        客户端库
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Dapp/%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%8A%82%E7%82%B9/%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%8A%82%E7%82%B9/" class="md-nav__link">
+        客户端节点
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_12" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12_12" id="__nav_12_12_label" tabindex="0">
+          相关中文网页翻译
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_12_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_12_12">
+          <span class="md-nav__icon md-icon"></span>
+          相关中文网页翻译
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Dapp/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E4%BB%80%E4%B9%88%E6%98%AF%20Dapp%EF%BC%9F%20%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E5%BA%94%E7%94%A8%E8%A7%A3%E9%87%8A/" class="md-nav__link">
+        什么是 Dapp？ 去中心化应用解释
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_12_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12_12_2" id="__nav_12_12_2_label" tabindex="0">
+          前端框架
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_12_12_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_12_12_2">
+          <span class="md-nav__icon md-icon"></span>
+          前端框架
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Dapp/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6/React%20%E5%88%9D%E5%AD%A6%E8%80%85%E6%8C%87%E5%8D%97/" class="md-nav__link">
+        React 初学者指南
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Dapp/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6/Web3%20%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94%E4%BD%A0%E9%9C%80%E8%A6%81%E4%BA%86%E8%A7%A3%E7%9A%84%E5%85%B3%E4%BA%8E%E6%9E%84%E5%BB%BA%20Dapp%20%E5%89%8D%E7%AB%AF%E7%9A%84%E4%B8%80%E5%88%87/" class="md-nav__link">
+        Web3 前端——你需要了解的关于构建 Dapp 前端的一切
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_12_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12_12_3" id="__nav_12_12_3_label" tabindex="0">
+          测试
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_12_12_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_12_12_3">
+          <span class="md-nav__icon md-icon"></span>
+          测试
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Dapp/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E6%B5%8B%E8%AF%95/%E5%A6%82%E4%BD%95%E6%B5%8B%E8%AF%95%20dApp%EF%BC%88%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%EF%BC%89/" class="md-nav__link">
+        如何测试 dApp（去中心化应用程序）
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Dapp/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E6%B5%8B%E8%AF%95/%E4%BB%80%E4%B9%88%E6%98%AF%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%EF%BC%9F/" class="md-nav__link">
+        什么是软件测试？
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_12_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12_12_4" id="__nav_12_12_4_label" tabindex="0">
+          部署
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_12_12_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_12_12_4">
+          <span class="md-nav__icon md-icon"></span>
+          部署
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Dapp/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E9%83%A8%E7%BD%B2/%E4%BD%BF%E7%94%A8%E9%9B%86%E6%88%90%20Web3%20%E7%9B%91%E6%8E%A7%E6%9E%84%E5%BB%BA%E4%BB%A5%E5%A4%AA%E5%9D%8A%20DApp%20%E7%9A%84%E6%95%99%E7%A8%8B/" class="md-nav__link">
+        使用集成 Web3 监控构建以太坊 DApp 的教程
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_12_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12_12_5" id="__nav_12_12_5_label" tabindex="0">
+          体系
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_12_12_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_12_12_5">
+          <span class="md-nav__icon md-icon"></span>
+          体系
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Dapp/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E4%BD%93%E7%B3%BB/Web%203.0%20%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%9E%B6%E6%9E%84/" class="md-nav__link">
+        Web 3.0 应用程序的架构
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_12_6" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12_12_6" id="__nav_12_12_6_label" tabindex="0">
+          安全
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_12_12_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_12_12_6">
+          <span class="md-nav__icon md-icon"></span>
+          安全
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Dapp/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%AE%89%E5%85%A8/dApp%20%E5%AE%89%E5%85%A8%EF%BC%9A%E6%89%80%E6%9C%89%E4%BD%A0%E9%9C%80%E8%A6%81%E7%9F%A5%E9%81%93%E7%9A%84/" class="md-nav__link">
+        dApp 安全：所有你需要知道的
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Dapp/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E5%AE%89%E5%85%A8/dAPP%20%E5%AE%89%E5%85%A8%E6%A0%87%E5%87%86/" class="md-nav__link">
+        dAPP 安全标准
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_12_7" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12_12_7" id="__nav_12_12_7_label" tabindex="0">
+          适用性
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_12_12_7_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_12_12_7">
+          <span class="md-nav__icon md-icon"></span>
+          适用性
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Dapp/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E9%80%82%E7%94%A8%E6%80%A7/%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%9A%84%E7%9C%9F%E5%AE%9E%E7%94%A8%E4%BE%8B/" class="md-nav__link">
+        区块链技术的真实用例
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Dapp/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E9%80%82%E7%94%A8%E6%80%A7/%E4%BB%80%E4%B9%88%E6%98%AF%20dApp%EF%BC%9F%20%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E5%BA%94%E7%94%A8%E6%8C%87%E5%8D%97/" class="md-nav__link">
+        什么是 dApp？ 去中心化应用指南
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_12_7_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12_12_7_3" id="__nav_12_12_7_3_label" tabindex="0">
+          去中心化金融（DeFi）
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_12_12_7_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_12_12_7_3">
+          <span class="md-nav__icon md-icon"></span>
+          去中心化金融（DeFi）
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Dapp/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E9%80%82%E7%94%A8%E6%80%A7/%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E9%87%91%E8%9E%8D%EF%BC%88DeFi%EF%BC%89/%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E9%87%91%E8%9E%8D%EF%BC%88DeFi%EF%BC%89%E5%AE%9A%E4%B9%89/" class="md-nav__link">
+        去中心化金融（DeFi）定义
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Dapp/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E9%80%82%E7%94%A8%E6%80%A7/%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E9%87%91%E8%9E%8D%EF%BC%88DeFi%EF%BC%89/%E4%BB%80%E4%B9%88%E6%98%AF%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E9%87%91%E8%9E%8D%EF%BC%88DeFi%EF%BC%89%EF%BC%9F/" class="md-nav__link">
+        什么是去中心化金融（DeFi）？
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_12_7_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12_12_7_4" id="__nav_12_12_7_4_label" tabindex="0">
+          DAO
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_12_12_7_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_12_12_7_4">
+          <span class="md-nav__icon md-icon"></span>
+          DAO
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Dapp/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E9%80%82%E7%94%A8%E6%80%A7/DAO/%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E8%87%AA%E6%B2%BB%E7%BB%84%E7%BB%87%20%28DAO%29/" class="md-nav__link">
+        去中心化自治组织 (DAO)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Dapp/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E9%80%82%E7%94%A8%E6%80%A7/DAO/%E4%BB%80%E4%B9%88%E6%98%AF%20DAO%EF%BC%8C%E5%AE%83%E4%BB%AC%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84%EF%BC%9F/" class="md-nav__link">
+        什么是 DAO，它们是如何工作的？
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_12_7_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12_12_7_5" id="__nav_12_12_7_5_label" tabindex="0">
+          NFTs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_12_12_7_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_12_12_7_5">
+          <span class="md-nav__icon md-icon"></span>
+          NFTs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Dapp/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E9%80%82%E7%94%A8%E6%80%A7/NFTs/NFT%EF%BC%8C%E8%A7%A3%E9%87%8A/" class="md-nav__link">
+        NFT，解释
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Dapp/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E9%80%82%E7%94%A8%E6%80%A7/NFTs/%E4%B8%8D%E5%8F%AF%E6%9B%BF%E4%BB%A3%E4%BB%A3%E5%B8%81%20%28NFT%29/" class="md-nav__link">
+        不可替代代币 (NFT)
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_12_7_6" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12_12_7_6" id="__nav_12_12_7_6_label" tabindex="0">
+          保险
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_12_12_7_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_12_12_7_6">
+          <span class="md-nav__icon md-icon"></span>
+          保险
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Dapp/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E9%80%82%E7%94%A8%E6%80%A7/%E4%BF%9D%E9%99%A9/%E4%BF%9D%E9%99%A9%E4%B8%9A%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%207%20%E5%A4%A7%E7%94%A8%E4%BE%8B/" class="md-nav__link">
+        保险业区块链的 7 大用例
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_12_8" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12_12_8" id="__nav_12_12_8_label" tabindex="0">
+          节点及服务(NaaS)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_12_12_8_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_12_12_8">
+          <span class="md-nav__icon md-icon"></span>
+          节点及服务(NaaS)
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Dapp/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E8%8A%82%E7%82%B9%E5%8F%8A%E6%9C%8D%E5%8A%A1%28NaaS%29/%E5%8C%BA%E5%9D%97%E9%93%BE%E8%8A%82%E7%82%B9%E6%8F%90%E4%BE%9B%E5%95%86%E5%8F%8A%E5%85%B6%E5%B7%A5%E4%BD%9C%E6%96%B9%E5%BC%8F/" class="md-nav__link">
+        区块链节点提供商及其工作方式
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
+          建设Scale
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_13">
+          <span class="md-nav__icon md-icon"></span>
+          建设Scale
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%BB%BA%E8%AE%BEScale/%E5%BB%BA%E8%AE%BEScale/" class="md-nav__link">
+        建设Scale
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_2" id="__nav_13_2_label" tabindex="0">
+          中文网页
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_13_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_13_2">
+          <span class="md-nav__icon md-icon"></span>
+          中文网页
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%BB%BA%E8%AE%BEScale/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E7%8A%B6%E6%80%81%E9%80%9A%E9%81%93%E5%9F%BA%E7%A1%80/" class="md-nav__link">
+        状态通道基础
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%BB%BA%E8%AE%BEScale/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E7%8A%B6%E6%80%81%E9%80%9A%E9%81%93%EF%BC%9A%E9%93%BE%E4%B8%8B%E4%BA%A4%E6%98%93%E7%AE%80%E4%BB%8B/" class="md-nav__link">
+        状态通道：链下交易简介
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%BB%BA%E8%AE%BEScale/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/Optimistic%20Rollups%20%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%EF%BC%88%E5%AE%8C%E6%95%B4%E6%8C%87%E5%8D%97%EF%BC%89/" class="md-nav__link">
+        Optimistic Rollups 如何工作（完整指南）
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%BB%BA%E8%AE%BEScale/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/%E4%BB%80%E4%B9%88%E6%98%AF%20zk-SNATRK%20%EF%BC%8C%E4%BB%A5%E5%8F%8A%20zk-SNARK%20%E6%98%AF%E6%80%8E%E4%B9%88%E8%BF%90%E4%BD%9C%E7%9A%84/" class="md-nav__link">
+        什么是 zk-SNATRK ，以及 zk-SNARK 是怎么运作的
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../%E5%BB%BA%E8%AE%BEScale/%E4%B8%AD%E6%96%87%E7%BD%91%E9%A1%B5/zk-SNARK%20%E7%AE%80%E4%BB%8B/" class="md-nav__link">
+        zk-SNARK 简介
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>智能合约简介</h1>
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": [], "search": "../../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.2a6f1dda.min.js"></script>
+      
+    
+  </body>
+</html>
