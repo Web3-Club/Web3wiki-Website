@@ -10,7 +10,7 @@
 详见 **[issues#7](https://github.com/Web3-Club/Web3wiki-Website/issues/7)**
 
 ## 翻译需要
-如果您想参与本项目，并且您有能力进行英语-简体中文 翻译，欢迎加入我们，为网页翻译作出贡献！
+如果您想参与本项目，并且您有能力进行英语-简体中文 翻译，欢迎[加入我们](https://github.com/Web3-Club/Intro./blob/main/Join%20club.md)，为网页翻译作出贡献！
 
 ## 项目[贡献者](https://github.com/Web3-Club/Web3wiki-Website/graphs/contributors?from=2023-02-12&to=2023-02-23&type=a)👨‍💻
 ### 永远感谢他们为本项目所作出的贡献
