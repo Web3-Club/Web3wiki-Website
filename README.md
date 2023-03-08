@@ -2,11 +2,15 @@
 [![GitHub stars](https://img.shields.io/github/stars/Web3-Club/Web3wiki-Website.svg?style=social&label=Stars)](https://github.com/Web3-Club/Web3wiki-Website)  [![GitHub watchers](https://img.shields.io/github/watchers/Web3-Club/Web3wiki-Website.svg?style=social&label=Watch)](https://github.com/Web3-Club/Web3wiki-Website)
 <br>
 <br>
+## www.web3wiki.site
 由[Web3-Club](https://github.com/Web3-Club/Intro./blob/main/README.md)组织建立的**中文互联网第一个Web3相关知识内容为主的百科站点**<br>
 该项目现在仍在施工中🏗️
 
 # 施工计划🔖
 详见 **[issues#7](https://github.com/Web3-Club/Web3wiki-Website/issues/7)**
+
+## 翻译需要
+如果您想参与本项目，并且您有能力进行英语-简体中文 翻译，欢迎[加入我们](https://github.com/Web3-Club/Intro./blob/main/Join%20club.md)，为网页翻译作出贡献！
 
 ## 项目[贡献者](https://github.com/Web3-Club/Web3wiki-Website/graphs/contributors?from=2023-02-12&to=2023-02-23&type=a)👨‍💻
 ### 永远感谢他们为本项目所作出的贡献
