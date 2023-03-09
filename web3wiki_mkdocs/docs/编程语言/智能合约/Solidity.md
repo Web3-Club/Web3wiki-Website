@@ -11,6 +11,11 @@ Solidity 是一种面向对象的编程语言，由以太坊网络团队专门�
 <br>
 
 **访问以下链接以了解更多相关信息**<br>
+## 简体中文
+[Solidity中文文档](https://solidity-cn.readthedocs.io/zh/develop/index.html)<br>
+[WTF学院｜Solidity](https://wtf.academy/)
+
+## English
 
 Solidity 编程语言<br>
 [Solidity Programming Language](https://soliditylang.org/)<br>
