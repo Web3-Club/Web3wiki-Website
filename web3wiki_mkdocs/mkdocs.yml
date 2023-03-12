@@ -305,3 +305,13 @@ theme:
     accent: 'indigo'
   feature:
     tabs: false  # 横向导航
+    
+
+
+
+extra:
+  disqus:
+  cusdis:
+    host:
+    app_id:
+    lang:
