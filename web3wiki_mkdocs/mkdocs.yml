@@ -106,25 +106,25 @@ nav:
       - "L2区块链":
         - "Layer-1 和 Layer-2 区块链扩展解决方案": "区块链常识/中文网页/区块链-中文网页/L2区块链/Layer-1 和 Layer-2 区块链扩展解决方案.md"
         - "Layer- 2 币安学院": "区块链常识/中文网页/区块链-中文网页/L2区块链/Layer- 2 币安学院.md"
-  - "更多区块链常识 相关链接":
+  - "更多区块链常识相关链接":
     - "区块链常识/更多区块链常识相关链接/index.md"
 - "Oracles":
   - "区块链预言机":
-    - "正文": "Oracles/区块链预言机.md"
+    - "Oracles/区块链预言机/index.md"
     - "相关网页中文翻译":
       - "什么是区块链预言机？": "Oracles/中文网页/区块链预言机-中文网页/什么是区块链预言机？.md"
   - "混合智能合约":
-    - "正文": "Oracles/混合智能合约.md"
+    - "Oracles/混合智能合约/index.md"
     - "相关网页中文翻译":
       - "混合智能合约解释": "Oracles/中文网页/混合智能合约-中文网页/混合智能合约解释.md"
       - "了解混合智能合约的完整指南": "Oracles/中文网页/混合智能合约-中文网页/了解混合智能合约的完整指南.md"
   - "Chainlink":
-    - "正文": "Oracles/Chainlink.md"
+    - "Oracles/Chainlink/index.md"
     - "相关网页中文翻译":
       - "什么是Chainlink？": "Oracles/中文网页/Chianlink-中文网页/什么是Chainlink？.md"
       - "5 分钟了解 Chainlink": "Oracles/中文网页/Chianlink-中文网页/5 分钟了解 Chainlink.md"
   - "Oracles 网络":
-    - "正文": "Oracles/Oracles网络.md"
+    - "Oracles/Oracles网络/index.md"
     - "相关网页中文翻译":
       - "分散的 Oracle 网络": "Oracles/中文网页/Oracles网络-中文网页/分散的 Oracle 网络.md"
       - "去中心化 Oracle 网络发展的新手指南": "Oracles/中文网页/Oracles网络-中文网页/分散的 Oracle 网络.md"
