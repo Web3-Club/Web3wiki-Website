@@ -1,4 +1,5 @@
 site_name: Web3-wiki
+# 如果您需要在项目中添加文件，请在本文件中添加相关文件索引，保证其的可用性。
 
 nav:
 - 首页: "index.md"
@@ -305,3 +306,14 @@ theme:
     accent: 'indigo'
   feature:
     tabs: false  # 横向导航
+    
+
+
+
+# 以下为 Cusdis 评论系统 设置 部分
+extra:
+  disqus:
+  cusdis:
+    host:
+    app_id:
+    lang:
