@@ -310,5 +310,5 @@ theme:
 
     # - toc.follow # 锚点关注(没看出来有什么用)
     # - toc.integrate # 将右选择栏放入左选择栏
-    # - navigation.path # 路径显示，但要赞助
+    # - navigation.path # 路径显示，但要赞助才能用
     # - navigation.sections # 索引分段
