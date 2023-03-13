@@ -1,8 +1,4 @@
-<<<<<<<< HEAD:web3wiki_mkdocs/docs/区块链常识/更多区块链常识相关链接/index.md
-# more<br>
-========
-## 更多区块链常识相关链接<br>
->>>>>>>> b98328a564ff3ea00ace0dc86e0bb2d0196a153a:web3wiki_mkdocs/docs/区块链常识/更多区块链常识相关链接.md
+# 更多区块链常识相关链接<br>
 
 <br>
 
