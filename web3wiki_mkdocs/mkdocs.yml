@@ -303,5 +303,12 @@ theme:
   palette:  # 颜色
     primary: 'default'
     accent: 'indigo'
-  feature:
-    tabs: false  # 横向导航
+  features:
+    - navigation.instant # 及时加载
+    - navigation.tabs # 增加导航选项卡(横向)
+    - navigation.indexes #节索引页
+    
+    # - toc.follow # 锚点关注(没看出来有什么用)
+    # - toc.integrate # 将右选择栏放入左选择栏
+    # - navigation.path # 路径显示，但要赞助
+    # - navigation.sections # 索引分段
