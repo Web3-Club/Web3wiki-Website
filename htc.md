@@ -9,3 +9,15 @@
 ## 在 GitHub 上编辑 本Wiki
 
 若您想 参与 Web3 Wiki 的编写，您需要一个 GitHub 账号（可以前往 [GitHub注册](https://github.com/signup) 页面注册）。
+
+## 使用 Git 在本地进行编辑
+
+虽然大多数情况下您可以直接在 GitHub 上进行编辑，但对于一些较为特殊的情况（如需要使用 GPG 签名），我们更推荐使用 Git 在本地进行编辑。
+
+大致流程如下：
+
+1.  将主仓库 Fork 到自己的仓库中；
+2.  将 Fork 后的分支仓库克隆（clone）到本地；
+3.  在本地进行修改后提交（commit）这些更改；
+4.  将这些更改推送（push）到你克隆的分支仓库；
+5.  提交 Pull Request 至主仓库。
