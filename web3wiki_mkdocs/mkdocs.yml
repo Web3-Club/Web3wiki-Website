@@ -310,7 +310,7 @@ theme:
 
 
 
-# Cusdis 评论系统 部分
+# 以下为 Cusdis 评论系统 设置 部分
 extra:
   disqus:
   cusdis:
