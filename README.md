@@ -4,7 +4,7 @@
 
 ### [web3wiki.site](https://web3wiki.site)
 由[Web3-Club](https://github.com/Web3-Club/Intro./blob/main/README.md)组织建立的**中文互联网第一个Web3相关知识内容为主的百科站点**  
-该项目现在仍在施工中 🏗️  欢迎各位一起积极参与共同建中文互联网第一个Web3百科站点
+该项目现在仍在施工中 🏗️  欢迎各位一起积极参与共同建设起 中文互联网第一个Web3百科站点
 
 
 ### 🔖 施工计划
@@ -12,7 +12,7 @@
 
    
 ### ✍🏻 翻译需要
-如果您想参与本项目，并且您有能力进行英语-简体中文 翻译，欢迎[加入我们](https://github.com/Web3-Club/Intro./blob/main/Join%20club.md)，为网页翻译作出贡献！
+如果您想参与本项目，特别是如果您有能力进行英语-简体中文 翻译，欢迎[加入我们](https://github.com/Web3-Club/Intro./blob/main/Join%20club.md)，为网页翻译作出贡献！
 
      
 ### ❤️ 项目贡献者
@@ -26,7 +26,7 @@
 ``0xBBc1fE874422F61fB135e72C3229Fffc3Cb266Fb``
 
 您的姓名或昵称将出现在[赞助榜](https://github.com/Web3-Club/Sponsor)界面上。
-感谢您对我们社区未来健康发展所作出的支持！
+**感谢您对我们社区未来健康发展所作出的支持！**
 
 
 ### 👏🏻 特别感谢 
@@ -46,7 +46,7 @@
 
 
 ### 📖 LICENCE
-[Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/legalcode)  
+[Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/legalcode)<br>
 Built by China Web3-Club [contributors](https://github.com/Web3-Club/Web3wiki-Website#%E9%A1%B9%E7%9B%AE%E8%B4%A1%E7%8C%AE%E8%80%85) with heart.  
 Blockchain Developer | Develop Roadmap &emsp;Copyright © roadmap.sh  
 Chinese Translation copyright © 2023 &emsp; China Web3-Club｜中国Web3社区  
