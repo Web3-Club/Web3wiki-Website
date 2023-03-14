@@ -32,7 +32,7 @@
 ### 👏🏻 特别感谢 
 特别感谢我们的[Premium Sponser](https://github.com/Web3-Club/Sponsor/blob/main/Premium%20sponsors.md)
 
-![Premium Sponser](https://user-images.githubusercontent.com/76860915/220133607-dddc3468-0cda-4065-bce3-3b275dfe6ad1.png)
+<a href="https://abetterweb3.notion.site"><img src="https://user-images.githubusercontent.com/76860915/220133607-dddc3468-0cda-4065-bce3-3b275dfe6ad1.png" alt="abetterweb3">
 
   
 ### 😃 关于我们 
