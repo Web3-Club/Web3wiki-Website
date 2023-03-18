@@ -300,15 +300,28 @@ nav:
 theme:
   name: 'material'
   language: 'zh'  # 配置语言
-  palette:  # 颜色
-    primary: 'default'
-    accent: 'indigo'
+  font:
+    text: Raleway # 可以挑选google字体，这个Raleway的"W"比较特别
+  palette:        # 添加日间、夜间选项
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
   features:
     - navigation.instant # 及时加载
     - navigation.tabs # 增加导航选项卡(横向)
     - navigation.indexes #节索引页(可以删除正文索引了)
+    - navigation.tracking #锚点跟随
+    - toc.integrate #导航整合(将右选择栏放入左选择栏)
+    - navigation.top #回到顶部按钮
 
     # - toc.follow # 锚点关注(没看出来有什么用)
-    # - toc.integrate # 将右选择栏放入左选择栏
     # - navigation.path # 路径显示，但要赞助才能用
     # - navigation.sections # 索引分段
