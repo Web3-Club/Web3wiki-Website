@@ -2,7 +2,7 @@ site_name: Web3-wiki
 
 nav:
 - 首页: "index.md"
-- "基本的区块链知识":
+- "基本区块链知识":
   - "什么是区块链":
     - "基本的区块链知识/什么是区块链/index.md"
     - "相关网页中文翻译":
@@ -283,6 +283,8 @@ nav:
     - "Optimistic Rollups 如何工作（完整指南）": "建设Scale/中文网页/Optimistic Rollups 如何工作（完整指南）.md"
     - "什么是 zk-SNATRK ，以及 zk-SNARK 是怎么运作的": "建设Scale/中文网页/什么是 zk-SNATRK ，以及 zk-SNARK 是怎么运作的.md"
     - "zk-SNARK 简介": "建设Scale/中文网页/zk-SNARK 简介.md"
+- "相关活动":
+  - "Web3相关活动/index.md"
 
 
 
