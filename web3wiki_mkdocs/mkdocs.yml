@@ -302,6 +302,8 @@ nav:
 theme:
   name: 'material'
   language: 'zh'  # 配置语言
+  favicon: images/favicon1.png # 标签页图标
+  logo: images/favicon1.png # 页面头部图标
   font:
     text: Raleway # 可以挑选google字体，这个Raleway的"W"比较特别
   palette:        # 添加日间、夜间选项
