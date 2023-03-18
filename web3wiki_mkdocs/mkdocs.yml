@@ -302,7 +302,17 @@ theme:
   language: 'zh'  # 配置语言
   palette:  # 颜色
     primary: 'default'
-    accent: 'indigo'
+    accent: cyan
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep orange
+      accent: deep orange
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+        
   features:
     - navigation.instant # 及时加载
     - navigation.tabs # 增加导航选项卡(横向)
@@ -312,3 +322,8 @@ theme:
     # - toc.integrate # 将右选择栏放入左选择栏
     # - navigation.path # 路径显示，但要赞助才能用
     # - navigation.sections # 索引分段
+
+palette:
+    - scheme: default
+      primary: cyan
+      
