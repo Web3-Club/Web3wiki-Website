@@ -16,7 +16,7 @@
 
      
 ## ❤️ 项目贡献者
-永远感谢他们为本项目所作出的贡献
+**永远感谢他们为本项目所作出的贡献！**
 
 
 [![contrib graph](https://contrib.rocks/image?repo=Web3-Club/Web3wiki-Website)](https://github.com/Web3-Club/Web3wiki-Website/graphs/contributors)
@@ -46,7 +46,7 @@
 
 
 ## 📖 LICENCE
-[Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/legalcode)<br>
+### [Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/legalcode)<br><br><br><br><br>  
 Built by China Web3-Club [contributors](https://github.com/Web3-Club/Web3wiki-Website#%E9%A1%B9%E7%9B%AE%E8%B4%A1%E7%8C%AE%E8%80%85) with heart.  
 Blockchain Developer | Develop Roadmap &emsp;Copyright © roadmap.sh  
 Chinese Translation copyright © 2023 &emsp; China Web3-Club｜中国Web3社区  
