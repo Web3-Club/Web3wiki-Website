@@ -16,7 +16,7 @@
 
      
 ## ❤️ 项目贡献者
-永远感谢他们为本项目所作出的贡献
+**永远感谢他们为本项目所作出的贡献！**
 
 
 [![contrib graph](https://contrib.rocks/image?repo=Web3-Club/Web3wiki-Website)](https://github.com/Web3-Club/Web3wiki-Website/graphs/contributors)
