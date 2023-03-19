@@ -301,23 +301,34 @@ nav:
 
 theme:
   name: 'material'
+
   language: 'zh'  # 配置语言
+
   favicon: images/favicon1.png # 标签页图标
+
   logo: images/favicon1.png # 页面头部图标
+
   font:
     text: Raleway # 可以挑选google字体，这个Raleway的"W"比较特别
-  palette:        # 添加日间、夜间选项
+
+  palette:        # 添加日间、夜间选项 
     # Palette toggle for light mode
     - scheme: default
+      primary: 'default'
+      accent: cyan
       toggle:
-        icon: material/brightness-7 
+        icon: material/toggle-switch-off-outline 
         name: Switch to dark mode
 
     # Palette toggle for dark mode
     - scheme: slate
+      primary: deep orange       #夜间变成橘红色
+      accent: deep orange
       toggle:
-        icon: material/brightness-4
+        icon: material/toggle-switch
         name: Switch to light mode
+  
+
   features:
     - navigation.instant # 及时加载
     - navigation.tabs # 增加导航选项卡(横向)
@@ -329,3 +340,8 @@ theme:
     # - toc.follow # 锚点关注(没看出来有什么用)
     # - navigation.path # 路径显示，但要赞助才能用
     # - navigation.sections # 索引分段
+
+palette:
+    - scheme: default
+      primary: cyan
+      
