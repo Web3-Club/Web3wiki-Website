@@ -43,6 +43,9 @@
 在此，我们希望为所有的对Web3未来感兴趣和欲为其“添砖加瓦”的朋友们一起,创造出更美好的Web3未来前景！<br>  
 （详见[关于我们](https://github.com/Web3-Club/Intro.#%E7%AE%80%E4%BB%8B) ）
 
+## 免责声明
+
+This web page "Web3 wiki" and any other contents published on this website shall not constitute investment advice, financial advice, trading advice, or any other kind of advice, and you should not treat any of the website's content as such. You alone assume the sole responsibility of evaluating the merits and risks associated with using any information or other content on this website before making any decisions based on such information. You understand that the crypto market is characterised by high volatility, and you should be aware of the concrete possibility of losing the entirety of the funds you allocated in the crypto market. You should refrain from using funds you can't afford to lose when purchasing cryptocurrencies and other digital tokens.<br><br>
 
 ## 📖 LICENCE
 ### [Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/legalcode)<br><br><br><br><br>  
