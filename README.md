@@ -47,6 +47,8 @@
 
 This web page "Web3 wiki" and any other contents published on this website shall not constitute investment advice, financial advice, trading advice, or any other kind of advice, and you should not treat any of the website's content as such. You alone assume the sole responsibility of evaluating the merits and risks associated with using any information or other content on this website before making any decisions based on such information. You understand that the crypto market is characterised by high volatility, and you should be aware of the concrete possibility of losing the entirety of the funds you allocated in the crypto market. You should refrain from using funds you can't afford to lose when purchasing cryptocurrencies and other digital tokens.<br><br>
 
+The organization that developed this page, "Web3Club", is currently a non-profit open source community, and all translations of the project were developed by members and contributors to the project, and any content in the project is protected by an open source licence.
+
 ## 📖 LICENCE
 ### [Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/legalcode)<br><br><br><br><br>  
 Built by China Web3-Club [contributors](https://github.com/Web3-Club/Web3wiki-Website#%E9%A1%B9%E7%9B%AE%E8%B4%A1%E7%8C%AE%E8%80%85) with heart.  
