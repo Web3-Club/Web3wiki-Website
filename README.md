@@ -48,7 +48,9 @@
 This web page "Web3 Wiki" and any other contents published on this website shall not constitute investment advice, financial advice, trading advice, or any other kind of advice, and you should not treat any of the website's content as such. You alone assume the sole responsibility of evaluating the merits and risks associated with using any information or other content on this website before making any decisions based on such information. <br><br>
 
 The organization that developed this page, "Web3Club", is currently a non-profit open source community, not a company or corporationand.<br><br>
-All translations of the project were developed by members and contributors to the project, and any content in the project is protected by an open source licence.<br><br>
+All translations of the project were developed by members and contributors to the project, and any content in the project is protected by an open source licence.
+   
+We always open source the original open source project in accordance with the license of the original open source project before translation, and the information of the original English project or the original author will be indicated in the following sections.
 
 If you have any questions about this, please read the LICENCE section below.
 
