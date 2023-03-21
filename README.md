@@ -18,7 +18,6 @@
 ## ❤️ 项目贡献者
 **永远感谢他们为本项目所作出的贡献！**
 
-
 [![contrib graph](https://contrib.rocks/image?repo=Web3-Club/Web3wiki-Website)](https://github.com/Web3-Club/Web3wiki-Website/graphs/contributors)
   
 ## 💐 赞助我们 
@@ -44,12 +43,27 @@
 在此，我们希望为所有的对Web3未来感兴趣和欲为其“添砖加瓦”的朋友们一起,创造出更美好的Web3未来前景！<br>  
 （详见[关于我们](https://github.com/Web3-Club/Intro.#%E7%AE%80%E4%BB%8B) ）
 
+## ⚠️ 免责声明
+
+This web page "Web3 Wiki" and any other contents published on this website shall not constitute investment advice, financial advice, trading advice, or any other kind of advice, and you should not treat any of the website's content as such. 
+   
+You alone assume the sole responsibility of evaluating the merits and risks associated with using any information or other content on this website before making any decisions based on such information. 
+
+The organization that developed this page, "Web3Club", is currently a non-profit open source community, not a company or corporationand.<br><br>
+All translations of the project were developed by members and contributors to the project, and any content in the project is protected by an open source licence.
+   
+We always open source the original open source project in accordance with the license of the original open source project before translation.
+   
+And in accordance with the requirements of the licence,the information of the original English project or the original author will be indicated in the following sections.
+
+If you have any questions about licence or copyright, please read the LICENCE section below or contact us at web3club@email.cn 
+
 
 ## 📖 LICENCE
 ### [Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/legalcode)<br><br><br><br><br>  
 Built by China Web3-Club [contributors](https://github.com/Web3-Club/Web3wiki-Website#%E9%A1%B9%E7%9B%AE%E8%B4%A1%E7%8C%AE%E8%80%85) with heart.  
 Blockchain Developer | Develop Roadmap &emsp;Copyright © roadmap.sh  
-Chinese Translation copyright © 2023 &emsp; China Web3-Club｜中国Web3社区  
+Chinese Translation copyright © 2023 &emsp; China [Web3-Club](https://github.com/Web3-Club)｜中国Web3社区  
 ALL RIGHT RESERVED  
  
 
