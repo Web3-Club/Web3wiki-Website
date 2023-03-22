@@ -2,7 +2,7 @@ site_name: Web3-wiki
 
 nav:
 - 首页: "index.md"
-- "基本的区块链知识":
+- "区块链知识":
   - "什么是区块链":
     - "基本的区块链知识/什么是区块链/index.md"
     - "相关网页中文翻译":
@@ -36,7 +36,6 @@ nav:
     - "相关网页中文翻译":
       - "区块链技术的十大现实应用": "基本的区块链知识/中文网页/区块链技术的应用和用途-中文网页/区块链技术的十大现实应用.md"
       - "打破现状的区块链应用和现实世界用例 E34": "基本的区块链知识/中文网页/区块链技术的应用和用途-中文网页/打破现状的区块链应用和现实世界用例 E34.md"
-- "区块链常识":
   - "贮存":
     - "区块链常识/贮存/index.md"
     - "相关网页中文翻译":
@@ -106,7 +105,7 @@ nav:
       - "L2区块链":
         - "Layer-1 和 Layer-2 区块链扩展解决方案": "区块链常识/中文网页/区块链-中文网页/L2区块链/Layer-1 和 Layer-2 区块链扩展解决方案.md"
         - "Layer- 2 币安学院": "区块链常识/中文网页/区块链-中文网页/L2区块链/Layer- 2 币安学院.md"
-  - "更多区块链常识相关链接":
+  - "更多区块链知识相关链接":
     - "区块链常识/更多区块链常识相关链接/index.md"
 - "Oracles":
   - "区块链预言机":
@@ -174,7 +173,7 @@ nav:
 
 #  标记：这以下使用的不再是"正文"
 
-- "编程语言":
+- "语言和框架":
   - "编程语言-智能合约": "编程语言/编程语言-智能合约.md"
   - "智能合约": 
     - "Solidity": "编程语言/智能合约/Solidity.md"
@@ -185,13 +184,10 @@ nav:
     - "JavaScript": "编程语言/智能合约 周边开发/JavaScript.md"
     - "Go": "编程语言/智能合约 周边开发/Go.md"
     - "Python": "编程语言/智能合约 周边开发/Python.md"
+  - "智能合约框架": "智能合约框架/智能合约框架.md"    #发现用index.md会使导航整合失效,一些有内部导航的index.md在导航整合时不会显示内部导航,取消导航整合会在右边显示内部导航
   - "相关网页中文翻译":
     - "如何在 Rust 中编写和部署智能合约": "编程语言/中文网页/如何在 Rust 中编写和部署智能合约-中文网页.md"
     - "在 Y 分钟内学习 Vyper": "编程语言/中文网页/在 Y 分钟内学习 Vyper-中文网页.md"
-
-- "智能合约框架":
-  - "智能合约框架/index.md"
-  - "相关网页中文翻译":
     - "以太坊开发者工具的权威列表 - 框架": "智能合约框架/中文网页/以太坊开发者工具的权威列表 - 框架.md"
     - "2022 年您需要的 10 大智能合约开发工具": "智能合约框架/中文网页/2022 年您需要的 10 大智能合约开发工具.md"
 
@@ -211,11 +207,9 @@ nav:
 - "管理平台":
   - "管理平台/index.md"
 
-- "版本控制系统":
-  - "版本控制系统/index.md"
-
-- "代码托管服务":
-  - "代码托管服务/index.md"
+- "代码托管方案":
+  - "版本控制系统": "版本控制系统/版本控制系统.md"
+  - "代码托管服务": "代码托管服务/代码托管服务.md"
   - "GitHub": "代码托管服务/Github.md"
   - "GitLab": "代码托管服务/GitLab.md"
   - "Bitbucket": "代码托管服务/Bitbucket.md"
@@ -283,6 +277,8 @@ nav:
     - "Optimistic Rollups 如何工作（完整指南）": "建设Scale/中文网页/Optimistic Rollups 如何工作（完整指南）.md"
     - "什么是 zk-SNATRK ，以及 zk-SNARK 是怎么运作的": "建设Scale/中文网页/什么是 zk-SNATRK ，以及 zk-SNARK 是怎么运作的.md"
     - "zk-SNARK 简介": "建设Scale/中文网页/zk-SNARK 简介.md"
+- "相关活动":
+  - "Web3相关活动/index.md"
 
 
 
@@ -299,31 +295,43 @@ nav:
 
 theme:
   name: 'material'
+
   language: 'zh'  # 配置语言
-  palette:  # 颜色
-    primary: 'default'
-    accent: cyan
+
+  favicon: images/favicon1.png # 标签页图标
+
+  logo: images/favicon1.png # 页面头部图标
+
+  font:
+    text: Raleway # 可以挑选google字体，这个Raleway的"W"比较特别
+
+  palette:        # 添加日间、夜间选项 
+    # Palette toggle for light mode
+    - scheme: default
+      primary: 'default'
+      accent: cyan
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/toggle-switch-off-outline 
         name: Switch to dark mode
+
+    # Palette toggle for dark mode
     - scheme: slate
-      primary: deep orange
+      primary: deep orange       #夜间变成橘红色
       accent: deep orange
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
-        
+  
+
   features:
     - navigation.instant # 及时加载
     - navigation.tabs # 增加导航选项卡(横向)
     - navigation.indexes #节索引页(可以删除正文索引了)
+    - navigation.tracking #锚点跟随
+    - toc.integrate #导航整合(将右选择栏放入左选择栏)
+    - navigation.top #回到顶部按钮
 
     # - toc.follow # 锚点关注(没看出来有什么用)
-    # - toc.integrate # 将右选择栏放入左选择栏
     # - navigation.path # 路径显示，但要赞助才能用
     # - navigation.sections # 索引分段
-
-palette:
-    - scheme: default
-      primary: cyan
       
