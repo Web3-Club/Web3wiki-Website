@@ -19,6 +19,9 @@
 **永远感谢他们为本项目所作出的贡献！**
 
 [![contrib graph](https://contrib.rocks/image?repo=Web3-Club/Web3wiki-Website)](https://github.com/Web3-Club/Web3wiki-Website/graphs/contributors)
+
+# 🐛 bug反馈&意见建议 
+请到[issues](https://github.com/Web3-Club/Web3wiki-Website/issues)提出。
   
 ## 💐 赞助我们 
 🪙 ETH：  ``0xBBc1fE874422F61fB135e72C3229Fffc3Cb266Fb``
