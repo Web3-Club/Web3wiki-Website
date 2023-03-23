@@ -20,7 +20,7 @@
 
 [![contrib graph](https://contrib.rocks/image?repo=Web3-Club/Web3wiki-Website)](https://github.com/Web3-Club/Web3wiki-Website/graphs/contributors)
 
-# 🐛 bug反馈&意见建议 
+## 🐛 bug反馈&意见建议 
 请到[issues](https://github.com/Web3-Club/Web3wiki-Website/issues)提出。
   
 ## 💐 赞助我们 
