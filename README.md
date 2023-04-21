@@ -20,6 +20,8 @@
 
 [![contrib graph](https://contrib.rocks/image?repo=Web3-Club/Web3wiki-Website)](https://github.com/Web3-Club/Web3wiki-Website/graphs/contributors)
 
+技术顾问：[Menci](https://github.com/Menci)
+
 ## 💬 项目讨论区
 [Discussions](https://github.com/Web3-Club/Web3wiki-Website/discussions)
 
