@@ -69,7 +69,7 @@ When we use the knowledge content of other projects, we will follow the open sou
    
 And in accordance with the requirements of the licence,the information of the original English project or the original author will be indicated in the following sections.
 
-If you have any questions about licence or copyright, please read the LICENCE section below or contact us at web3club@email.cn 
+If you have any questions about licence or copyright, please read the LICENCE section below or contact us at web3clubCN@outlook.com.
 
 
 ## 📖 LICENCE
