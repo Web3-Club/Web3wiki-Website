@@ -1,10 +1,7 @@
-# [Web3-wiki](https://web3wiki.site/)📘
+# 📘 [Web3-wiki](https://web3wiki.site/)
 ![GitHub stars](https://img.shields.io/github/stars/Web3-Club/Web3wiki-Website.svg?style=social&label=Stars)[![GitHub watchers](https://img.shields.io/github/watchers/Web3-Club/Web3wiki-Website.svg?style=social&label=Watch)](https://github.com/Web3-Club/Web3wiki-Website)
 
-
-# [web3wiki.site](https://web3wiki.site)
-
-## Make Web3 future better ！
+## 💪🏻 Make Web3 future better
 
 由[Web3-Club](https://github.com/Web3-Club/Intro./blob/main/README.md)组织建立的**中文互联网第一个Web3相关知识内容为主的百科站点**<br>    
 该项目现在仍在施工中 🏗️  欢迎各位一起积极参与共同建设起 中文互联网第一个Web3百科站点
