@@ -13,7 +13,7 @@
 ## 💼 项目相关仓库 
 [Web3Wiki Docs - GitHub](https://github.com/Web3-Club/Web3Wiki-Docs)
 
-[Web3Wiki文档知识库 - 语雀]（https://www.yuque.com/yanboeth/web3wiki/）
+[Web3Wiki文档知识库 - 语雀](https://www.yuque.com/yanboeth/web3wiki/)
    
 ## ✍🏻 翻译需要
 如果您想参与本项目，特别是如果您有能力进行英语-简体中文 翻译，欢迎[加入我们](https://github.com/Web3-Club/Intro./blob/main/Join%20club.md)，为项目发展及其网页翻译作出贡献！
