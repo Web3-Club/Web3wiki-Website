@@ -6,7 +6,7 @@ hide:
 <!-- 以上让侧选择条消失，只在此md中有效 -->
 
 # [Web3-wiki](https://web3wiki.site/)📘
-[![GitHub stars](https://img.shields.io/github/stars/Web3-Club/Web3wiki-Website.svg?style=social&label=Stars)[![GitHub watchers](https://img.shields.io/github/watchers/Web3-Club/Web3wiki-Website.svg?style=social&label=Watch)](https://github.com/Web3-Club/Web3wiki-Website)
+![GitHub stars](https://img.shields.io/github/stars/Web3-Club/Web3wiki-Website.svg?style=social&label=Stars)[![GitHub watchers](https://img.shields.io/github/watchers/Web3-Club/Web3wiki-Website.svg?style=social&label=Watch)](https://github.com/Web3-Club/Web3wiki-Website)
 
 
 ## [web3wiki.site](https://web3wiki.site)
