@@ -7,6 +7,10 @@ hide:
 
 # [Web3-wiki](https://web3wiki.site/)📘
 ![GitHub stars](https://img.shields.io/github/stars/Web3-Club/Web3wiki-Website.svg?style=social&label=Stars)[![GitHub watchers](https://img.shields.io/github/watchers/Web3-Club/Web3wiki-Website.svg?style=social&label=Watch)](https://github.com/Web3-Club/Web3wiki-Website)
+[![Twitter Group][twitter-badge]][twitter-url]
+
+[twitter-badge]: https://img.shields.io/twitter/follow/web3clubCN
+[twitter-url]: https://twitter.com/web3clubCN
 
 
 ## [web3wiki.site](https://web3wiki.site)
