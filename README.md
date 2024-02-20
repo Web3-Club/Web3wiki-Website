@@ -45,7 +45,7 @@
 **感谢您对我们社区未来健康发展所作出的支持**
 
 ## 商务合作｜加入交流群（请提前备注来意）
-WeChat：YanboTravelAllWorld
+WeChat：YanboAtWeb3
 
 
 ## 👏🏻 特别感谢 
