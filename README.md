@@ -1,3 +1,23 @@
+# 公告
+
+因 综合考量下列因素
+
+- Wiki的整体构建难度以及信息的广度（特别是Web3领域的发展速度之快）
+
+- web3wiki.site 域名过期后被抢注
+
+本开源组织重心主要转向于hello-web3项目的编辑。
+
+因此我们暂时暂停了接下来的更新，运营和编辑计划。
+
+感谢您对本项目的支持，希望我们未来有缘再见！
+
+
+
+---
+
+
+
 # 📘 [Web3-wiki](https://web3wiki.site/)
 ![GitHub stars](https://img.shields.io/github/stars/Web3-Club/Web3wiki-Website.svg?style=social&label=Stars)[![GitHub watchers](https://img.shields.io/github/watchers/Web3-Club/Web3wiki-Website.svg?style=social&label=Watch)](https://github.com/Web3-Club/Web3wiki-Website)
 
